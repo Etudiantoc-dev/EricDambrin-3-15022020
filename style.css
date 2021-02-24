@@ -24,7 +24,7 @@ body{
     width: 50%;
     margin: auto;
     font-family:'shrikhandregular' ;
-    font-weight: bolder;
+   
   
 }
 #quartier{
@@ -43,8 +43,19 @@ input{
     background: rgb(242, 233, 233);
     padding: 15px 0 15px 0;
     border-top:2px rgb(215, 212, 212) solid;
-    
-   
-    
+}
+#action h3{
+    padding-top: 10px;
+    width: 50%;
+    margin: auto;
     
 }
+.suite_h3{
+  margin: auto;
+  width: 70%;
+}
+h3{
+    font-family:'robotoregular' ;
+}
+
+
