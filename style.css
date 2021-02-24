@@ -4,7 +4,8 @@
          url('fonts/shrikhand-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-family: 'robotoregular';
+}
+@font-face{    font-family: 'robotoregular';
     src: url('fonts/Roboto-Regular-webfont.eot');
     src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
@@ -15,4 +16,35 @@
     font-style: normal;
 
 } 
-
+body{
+  width: 100%;
+  margin:auto;
+}
+.titre {
+    width: 50%;
+    margin: auto;
+    font-family:'shrikhandregular' ;
+    font-weight: bolder;
+  
+}
+#quartier{
+    display: flex;
+    width: 35%;
+    margin: auto;
+   
+   
+   
+}
+input{
+    border: none;
+    background: none;
+}
+.formulaire{
+    background: rgb(242, 233, 233);
+    padding: 15px 0 15px 0;
+    border-top:2px rgb(215, 212, 212) solid;
+    
+   
+    
+    
+}
