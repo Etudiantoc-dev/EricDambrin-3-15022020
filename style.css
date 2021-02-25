@@ -19,7 +19,9 @@
 body{
   width: 100%;
   margin:auto;
+  font-size: x-large;
 }
+
 .titre {
     width: 50%;
     margin: auto;
