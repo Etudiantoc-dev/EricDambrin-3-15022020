@@ -17,7 +17,7 @@
 
 } 
 body{
-  width: 100%;
+  width: 316px;
   margin:auto;
   
 }
@@ -170,5 +170,82 @@ p, .suite_p{
     margin-bottom: 10px;
 }
 
+#restaurants {
+    width: 100%;
+    margin: auto;
+    background:rgb(244, 241, 241);;
+    padding-top: 4px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+    
+}
+
+#restaurants img{
+    width: 85%;
+    margin-left: 22px;
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px ;
+}
+.textimg{
+    margin-left: 25px;
+    font-family:'robotoregular';
+    background: white;
+    margin-right: 22px;
+    position: relative;
+    right: 1%;
+    bottom: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:  2px 4px rgb(233, 231, 231) ;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    
+    
+    
+}
+#restaurants h3{
+    margin-left: 20px;
+    
+}
+.resto{
+    
+   
+    margin-bottom: 15px;
+   
+    
+    
+}
+
+footer {
+   
+    background: black;
+    height: 200px;
+}
+footer a, footer h3, footer i{
+    color: white;
+    margin-top: 7px;
+    
+   
+    
+    
+    
+}
+footer i,footer a{
+    position: relative;
+    right: 20px;
+}
+footer a{
+    text-decoration: none;
+}
+   
+
+footer h3{
+    font-family: 'shrikhandregular';
+    padding-top: 20px;
+    margin-left: 20px;
+   
+}
 
 
