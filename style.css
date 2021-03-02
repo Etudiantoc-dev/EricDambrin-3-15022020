@@ -20,16 +20,19 @@
 
 } 
 body{
-  width: 100%;
-  margin: auto;
-  min-width: 320px;
+ 
+  margin: 0 0 0 0;
   
   
+}
+#bloc_page{
+    width: 100%;
+    margin: auto;
 }
 
 
 .titre {
-    width: 50%;
+    width: max-content;
     margin: auto;
     font-family:'shrikhandregular' ;
    
@@ -38,7 +41,7 @@ body{
 #quartier{
     display: flex;
     align-content: space-between;
-    width: 50%;
+    width: max-content;
     margin: auto;
    
    
@@ -64,42 +67,46 @@ input{
 }
 #action h3{
     padding-top: 10px;
-    width: 60%;
+    width: max-content;
     margin: auto;
+    
+    
     
     
 }
 .suite_h3{
   margin: auto;
-  width: 70%;
+  width: max-content;
 }
 h3{
     font-family:'robotoregular' ;
-    font-weight: 100;
+    font-size: 1.4em;
 }
 #action p{
-    width: 75%;
+    width: max-content;
     margin: auto;
     padding-top: 10px;
+   
+    
     
     }
 .suite_p{
-    width: 55%;
+    width: max-content;
     margin: auto;
+    
 }
 p, .suite_p{
     font-family:'robotoregular';
-    font-size: small;
+    
 }
 .lien_restaurants{
     
-    width: 60%;
+    width: max-content;
     margin: auto;
     margin-top: 10px;
-    padding: 10px 0px 10px 0px;
+    padding: 12px;
     background: #ca56dc;
     font-family:'robotoregular' ;
-    font-size: small;
     border-radius: 20px;
     box-shadow:0px 4px rgb(237, 235, 235);
     
@@ -107,8 +114,8 @@ p, .suite_p{
 .lien_restaurants a{
     text-decoration: none;
     color: white;
-    margin-bottom: 5px;
-    margin-left: 25px;
+    margin-bottom: 5p;
+    margin-left: 25p;
     
    
     
@@ -116,26 +123,32 @@ p, .suite_p{
 }
 #action{
     background: rgb(244, 241, 241);
-    padding-bottom: 20px;
+    padding-bottom: 55px;
 }
 .un,.deux,.trois{
     display: flex;
-    
     padding: 15px 40px 15px 10px;
     font-family:'robotoregular' ;
     font-weight: bold;
     background: rgb(244, 241, 241);
     border-radius: 18px;
-    width: 90%;
+    width: max-content;
     margin: auto;
     box-shadow: 2px 4px rgb(233, 231, 231) ;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
    
 }
+.deux{
+    padding-right: 55px;
+}
+
+    
 
 
 
-.un__un, .deux__deux,.trois__trois{
+
+
+.un__un,.deux__deux,.trois__trois{
     
     justify-content: flex-start;
     position: relative;
@@ -150,14 +163,15 @@ p, .suite_p{
 }
 
 
-#fonctionnement {
+#fonctionnement h3{
  
+   width:max-content;
+    margin-left: 20px;
    
-   padding: 0 40px 10px 10px;
-   margin: auto;
-   width: 80%;
   
 }
+
+
 
 
 
