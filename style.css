@@ -187,6 +187,7 @@ p, .suite_p{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     height: 263.36px;
+    
 }
 
 
@@ -223,7 +224,7 @@ footer {
 }
 footer a, footer h3, footer i{
     color: white;
-    margin-top: 10px;
+    padding: 2px;
     
    
     
@@ -259,8 +260,8 @@ footer h3{
     }
     #bloc_page{
         width: 100%;
-        margin-left: 10px;
-        flex-wrap: wrap;
+        margin-left: 10p;
+        
         
 
     }
@@ -271,14 +272,54 @@ footer h3{
     #mediascreen{
         display: flex;
         justify-content: space-around;
+        
+    }
+    .resto{
+        
+        width: 100%;
+        margin: auto;
+        
+        
+        
+       
+        
+        
     }
     #restos{
-        
         display: flex;
+        width: 100%;
+        justify-content: space-between;
+       
+        margin: auto;
+
+    }
+    .restos1,.restos2{
+        padding: 20px;
+        width: 100%;
         
     }
-
-
+    .resto{
+        margin-bottom: 20px;
+    }
+    footer ul{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        justify-content: baseline;
+        list-style: none;
+        
+    }
 }
+    
+  @media screen and(min-width:725px){
+      footer{
+          padding: 3px;
+      }
+  }
+  
+ 
+
+
+
 
 
