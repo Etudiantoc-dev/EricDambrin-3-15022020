@@ -16,15 +16,17 @@
     font-style: normal;
 
 
-    
+ 
+
+
+   
 
 } 
 body{
     width: 100%;
     margin: auto;
-  
- 
-  
+    
+    
   
 }
 
@@ -203,7 +205,7 @@ p, .suite_p{
     margin-left: 20px;
     
 }
-.resto,.resto2{
+.resto{
     
    
    
@@ -247,6 +249,36 @@ footer h3{
     
 
    
+}
+@media screen and (min-width:426px){
+    body{
+        
+        margin: auto;
+        
+        
+    }
+    #bloc_page{
+        width: 100%;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        
+
+    }
+
+    .titre{
+        margin-left: 10px;
+    }
+    #mediascreen{
+        display: flex;
+        justify-content: space-around;
+    }
+    #restos{
+        
+        display: flex;
+        
+    }
+
+
 }
 
 
