@@ -20,7 +20,10 @@
 
 } 
 body{
- 
+  width: 100%;
+  margin: auto;
+  min-width: 320px;
+  
   margin: 0 0 0 0;
   
   
@@ -71,8 +74,6 @@ input{
     margin: auto;
     
     
-    
-    
 }
 .suite_h3{
   margin: auto;
@@ -86,18 +87,15 @@ h3{
     width: max-content;
     margin: auto;
     padding-top: 10px;
-   
-    
     
     }
 .suite_p{
     width: max-content;
     margin: auto;
-    
 }
 p, .suite_p{
     font-family:'robotoregular';
-    
+    font-size: small;
 }
 .lien_restaurants{
     
@@ -107,6 +105,7 @@ p, .suite_p{
     padding: 12px;
     background: #ca56dc;
     font-family:'robotoregular' ;
+    font-size: small;
     border-radius: 20px;
     box-shadow:0px 4px rgb(237, 235, 235);
     
@@ -123,7 +122,7 @@ p, .suite_p{
 }
 #action{
     background: rgb(244, 241, 241);
-    padding-bottom: 55px;
+    padding-bottom: 20px;
 }
 .un,.deux,.trois{
     display: flex;
@@ -135,7 +134,7 @@ p, .suite_p{
     width: max-content;
     margin: auto;
     box-shadow: 2px 4px rgb(233, 231, 231) ;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
    
 }
 .deux{
@@ -163,15 +162,16 @@ p, .suite_p{
 }
 
 
-#fonctionnement h3{
+#fonctionnement {
  
    width:max-content;
     margin-left: 20px;
    
+   padding: 0 40px 10px 10px;
+   margin: auto;
+   width: 80%;
   
 }
-
-
 
 
 
@@ -182,8 +182,9 @@ p, .suite_p{
     background:rgb(244, 241, 241);;
     padding-top: 4px;
     margin-top: 15px;
+    margin-bottom: 20px;
     padding-bottom: 60px;
-   
+    
     
 }
 
@@ -199,7 +200,7 @@ p, .suite_p{
     font-family:'robotoregular';
     margin-left: 10px;
     padding-bottom: 10px;
-    padding-top: 7px;
+    padding-top: 5px;
     
     
     
@@ -227,7 +228,7 @@ footer {
 }
 footer a, footer h3, footer i{
     color: white;
-    margin-top: 10px;
+    margin-top: 7px;
     
    
     
