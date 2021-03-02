@@ -182,7 +182,6 @@ p, .suite_p{
     background:rgb(244, 241, 241);;
     padding-top: 4px;
     margin-top: 15px;
-    margin-bottom: 20px;
     padding-bottom: 60px;
     
     
@@ -228,7 +227,7 @@ footer {
 }
 footer a, footer h3, footer i{
     color: white;
-    margin-top: 7px;
+    margin-top: 10px;
     
    
     
