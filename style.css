@@ -182,8 +182,8 @@ p, .suite_p{
     background:rgb(244, 241, 241);;
     padding-top: 4px;
     margin-top: 15px;
-    margin-bottom: 20px;
     padding-bottom: 60px;
+   
     
 }
 
@@ -212,9 +212,9 @@ p, .suite_p{
 .resto{
     
    
-    margin-bottom: 15px;
+   
     background: white;
-    margin: 0 15px 10px 15px;
+    margin: 0 15px 20px 15px;
     border-radius: 10px;
     box-shadow:  2px 4px rgb(233, 231, 231) ;
     
@@ -227,7 +227,7 @@ footer {
 }
 footer a, footer h3, footer i{
     color: white;
-    margin-top: 7px;
+    margin-top: 10px;
     
    
     
@@ -240,6 +240,7 @@ footer i,footer a{
 }
 footer a{
     text-decoration: none;
+    font-size: 1.4em;
 }
    
 
@@ -247,6 +248,10 @@ footer h3{
     font-family: 'shrikhandregular';
     padding-top: 20px;
     margin-left: 20px;
+    margin-top: 0%;
+    width: max-content;
+    
+
    
 }
 
