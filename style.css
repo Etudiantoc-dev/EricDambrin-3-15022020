@@ -25,7 +25,7 @@
 body{
     width: 100%;
     margin: auto;
-    
+    max-width: 768px;
     
   
 }
@@ -250,7 +250,7 @@ footer h3{
 
    
 }
-@media screen and (min-width:426px){
+@media screen and (min-width:426px)and (max-width:767px){
     body{
         
         margin: auto;
@@ -259,7 +259,8 @@ footer h3{
     }
     #bloc_page{
         width: 100%;
-        margin-left: 10p;
+        margin-left: 12p;
+        
         
         
 
@@ -304,17 +305,29 @@ footer h3{
         display: flex;
         width: 90%;
         margin: auto;
-        justify-content: baseline;
         list-style: none;
         
+        
     }
+   
 }
     
-  @media screen and(min-width:725px){
-      footer{
-          padding: 3px;
-      }
+  @media screen and (min-width:768px){
+    footer ul{
+        flex-direction: column;
+    }
+    h3{
+        font-size: xx-large;
+    }
+    p,.titre,.bulles{
+        font-size: x-large;
+    }
+  .restos1,.restos2{
+      display: flex;
+      width: 100%;
+      
   }
+}
   
  
 
