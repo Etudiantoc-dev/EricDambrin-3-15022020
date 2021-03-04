@@ -14,7 +14,7 @@
          url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+  
 
  
 
@@ -63,7 +63,7 @@ input{
 }
 ::placeholder{
     color: black;
-    font-weight: bold;
+    font-weight: normal;
 }
 #action h3{
     padding-top: 10px;
@@ -80,10 +80,12 @@ h3{
     font-family:'robotoregular' ;
     font-size: 1.4em;
 }
+
 #action p{
     width: max-content;
     margin: auto;
     padding-top: 10px;
+    
     
     }
 .suite_p{
@@ -92,7 +94,7 @@ h3{
 }
 p, .suite_p{
     font-family:'robotoregular';
-    font-size: small;
+    color: rgb(128, 125, 125);
 }
 .lien_restaurants{
     
@@ -158,11 +160,11 @@ p, .suite_p{
 
 #fonctionnement {
  
-   width:max-content;
+   width:80%;
     margin-left: 20px;
    padding: 0 40px 10px 10px;
    margin: auto;
-   width: 80%;
+  
   
 }
 
@@ -188,6 +190,47 @@ p, .suite_p{
     height: 193.33px;
     
 }
+span{
+    position: absolute;
+    right: 7%;
+    margin-top: 10px;
+    background: #99E2D0;
+    padding: 3px 7px 3px 7px;
+    border-radius: 2px;
+    font-family:'robotoregular' ;
+    font-size: small;
+    color: transparent;
+    text-shadow:0 0 1px #330;
+    
+   
+
+    
+}
+#restaurants i{ /*COEUR*//*comment avoir le traît moins?*/
+   position: absolute;
+   right: 35px;
+   margin-top: 5px;
+   font-size: 25px;
+   
+   
+  
+  
+  
+   
+   
+}
+
+     
+
+:hover.fa-heart{/*comment faire pour que le coeur fond blanc 
+    deviennent coeur fond violet au survol?? */
+    
+     color:#9356DC ;
+     
+     
+     
+     
+}
 
 
 .textimg{
@@ -196,10 +239,11 @@ p, .suite_p{
     margin-left: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
-    font: message-box;
+    font: icon;
     
     
 }
+
 
 
 
@@ -207,7 +251,7 @@ p, .suite_p{
     margin-left: 20px;
     
 }
-.resto{
+.resto,.resto2{
     
    
    
@@ -220,12 +264,17 @@ p, .suite_p{
 
 footer {
    
-    background: black;
+    background:  rgb(62, 60, 60);
     height: 200px;
+    font-family: 'robotoregular';
+}
+footer li{
+    list-style: none;
 }
 footer a, footer h3, footer i{
+    
     color: white;
-    padding: 2px;
+    
     
    
     
@@ -235,10 +284,13 @@ footer a, footer h3, footer i{
 footer i,footer a{
     position: relative;
     right: 20px;
+    font-size: 0.8em;
 }
 footer a{
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.1em;
+    margin-left: 3px;
+    
 }
    
 
