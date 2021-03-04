@@ -100,7 +100,7 @@ p, .suite_p{
     margin: auto;
     margin-top: 10px;
     padding: 12px;
-    background: linear-gradient(#b85cdf,#ab29bf);
+    background: #ca56dc;
     font-family:'robotoregular' ;
     font-size: small;
     border-radius: 20px;
@@ -185,7 +185,7 @@ p, .suite_p{
     margin: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    height: 193.33px;
+    height: 263.36px;
     
 }
 
@@ -196,12 +196,10 @@ p, .suite_p{
     margin-left: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
-    font: message-box;
+    
     
     
 }
-
-
 
 #restaurants h3{
     margin-left: 20px;
@@ -252,7 +250,7 @@ footer h3{
 
    
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:426px)and (max-width:767px){
     body{
         
         margin: auto;
