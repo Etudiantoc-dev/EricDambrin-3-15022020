@@ -323,7 +323,7 @@ footer h3{
 
    
 }
-@media  (min-width:768px)and(max-width:1259px){
+@media  screen and (min-width:768px) and (max-width:1259px){
     body{
         max-width: 1259px;
     }
