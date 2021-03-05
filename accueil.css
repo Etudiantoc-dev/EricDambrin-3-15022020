@@ -49,7 +49,11 @@ body{
 }
 .texte{
     margin-left: 15px;
+    font-size:1em;
     
+}
+.logo_map{
+    margin-left: 15px;
 }
 input{
     border: none;
@@ -127,6 +131,7 @@ p, .suite_p{
     padding: 15px 60px 15px 10px;
     font-family:'robotoregular' ;
     font-weight: bold;
+    font-size: small;
     background: rgb(244, 241, 241);
     border-radius: 18px;
     width: 87%;
@@ -161,11 +166,15 @@ p, .suite_p{
 #fonctionnement {
  
    width:80%;
-    margin-left: 20px;
+   margin-left: 20px;
    padding: 0 40px 10px 10px;
    margin: auto;
   
   
+}
+.texte1{
+    margin-left: 21px;
+
 }
 
 
@@ -190,10 +199,18 @@ p, .suite_p{
     height: 193.33px;
     
 }
-span{
+    
+
+.resto,.textimg{
+    position: relative;
+}
+
+span{/* mot "nouveau"sur photos ne reste pas en place (haut à droite) 
+    sur des formats visuels plus étendu jusqu'à 767px*/
     position: absolute;
-    right: 7%;
-    margin-top: 10px;
+    left: 78%;
+    top: 11px;
+    z-index:1 ;
     background: #99E2D0;
     padding: 3px 7px 3px 7px;
     border-radius: 2px;
@@ -208,9 +225,10 @@ span{
 }
 #restaurants i{ /*COEUR*//*comment avoir le traît moins?*/
    position: absolute;
-   right: 35px;
-   margin-top: 5px;
-   font-size: 25px;
+   right: 25px;
+   top: 16px;
+   font-size: 24px;
+  
    
    
   
@@ -220,9 +238,10 @@ span{
    
 }
 
+
      
 
-:hover.fa-heart{/*comment faire pour que le coeur fond blanc 
+:hover.fa-heart-o{/*comment faire pour que le coeur fond blanc 
     deviennent coeur fond violet au survol?? */
     
      color:#9356DC ;
@@ -251,7 +270,7 @@ span{
     margin-left: 20px;
     
 }
-.resto,.resto2{
+.resto{
     
    
    
@@ -305,70 +324,61 @@ footer h3{
    
 }
 @media screen and (min-width:768px){
-    body{
-        
-        margin: auto;
-        
-        
-    }
-    #bloc_page{
-        width: 100%;
-        margin-left: 12p;
-        
-        
-        
+  .texte,.texte1,.logo_map{
+    font-size: x-large;
+  }
+  .suite_p {
+      font-size: x-large;
+  }
+  .lien_restaurants{
+      font-size: 1.2em;
+  }
+  .un__un,.deux__deux,.trois__trois{
+      margin-top: 8px;
+  }
+  .texte1{
+      margin-left: 23px;
+  }
+  
 
-    }
-
-    .titre{
-        margin-left: 10px;
-    }
-    #mediascreen{
-        display: flex;
-        justify-content: space-around;
-        
-    }
+    
+     
+    
     .resto{
         
         width: 100%;
-        margin: auto;
-        
+        margin-left: 20px;
         
         
        
         
         
     }
-    #restos{
-        display: flex;
+    #restos img{
         width: 100%;
+        
+
+    }
+    .restos1_2,.restos2_3{
+        display: flex;
         justify-content: space-between;
-       
-        margin: auto;
-
-    }
-    .restos1,.restos2{
-        padding: 20px;
-        width: 100%;
         
-    }
-    .resto{
-        margin-bottom: 20px;
-    }
-    footer ul{
-        display: flex;
-        width: 90%;
-        margin: auto;
-        list-style: none;
         
         
     }
    
-}
-    
-  @media screen and (min-width:768px){
     footer ul{
-        flex-direction: column;
+        
+        width: 85%;
+        font-size: 1.3em;
+        list-style: none;
+        display: flex;
+        
+        
+        
+    }
+    .textimg{
+        font-size: x-large;
     }
     h3{
         font-size: xx-large;
@@ -376,12 +386,21 @@ footer h3{
     p,.titre,.bulles{
         font-size: x-large;
     }
-  .restos1,.restos2{
-      display: flex;
-      width: 100%;
-      
-  }
+  
+
+   
 }
+@media screen and(max-width:380px){
+
+}
+    
+  
+   
+    
+      
+      
+  
+
   
  
 
