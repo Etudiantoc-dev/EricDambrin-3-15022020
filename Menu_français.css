@@ -52,7 +52,7 @@
           padding-top: 5px;
           position: relative;
           background: rgb(244, 241, 241);
-          adding-bottom: 47px;
+          padding-bottom: 47px;
       }
       #menu{
           margin-left: 15px;
@@ -128,7 +128,9 @@
       footer {
         background: rgb(62, 60, 60);
         height: 200px;
-        font-family: "robotoregular";
+        font-family: "robotoregular";    
+        padding-top: 7px;
+
       }
       footer li {
         list-style: none;
