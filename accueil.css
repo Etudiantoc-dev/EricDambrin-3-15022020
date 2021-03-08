@@ -130,6 +130,9 @@ p,
   padding-left: 6px;
   font-size: small;
 }
+.trois{
+  background:#eee1ff ;
+}
 
 #fonctionnement {
   width: 80%;
@@ -156,10 +159,12 @@ p,
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 193.33px;
+  
+  
 }
 
-.resto,
-.textimg {
+
+.textimg,.resto {
   position: relative;
 }
 
@@ -178,19 +183,30 @@ span {
   color: transparent;
   text-shadow: 0 0 1px #330;
 }
-#restaurants i {
-  /*COEUR*/ /*comment avoir le traît moins?*/
+.fa-heart-o {
+  /*COEUR*/ /*comment avoir le traît moins large?*/
   position: absolute;
   right: 25px;
   top: 16px;
   font-size: 24px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
 }
 
 :hover.fa-heart-o {
   /*comment faire pour que le coeur fond blanc 
     deviennent coeur fond violet au survol?? */
 
-  color: #9356dc;
+  
+  
+  cursor: pointer;
+  transform: scale(1.15);
+  
+  
+}
+:focus .fa-heart-o{
+  background-color: #9356dc;
 }
 
 .textimg {
