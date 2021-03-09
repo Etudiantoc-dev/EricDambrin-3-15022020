@@ -77,6 +77,7 @@ h3 {
 .suite_p {
   width: max-content;
   margin: auto;
+  margin-top: -13px;
 }
 p,
 .suite_p {
@@ -315,7 +316,7 @@ footer h3 {
   }
   p,
   .titre,
-  .bulles {
+  #fonctionnement {
     font-size: x-large;
   }
 }
