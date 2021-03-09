@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("fonts/shrikhand-regular.woff2") format("woff2"),
+    url("fonts/shrikhand-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "robotoregular";
+  src: url("fonts/Roboto-Regular-webfont.eot");
+  src: url("fonts/Roboto-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Roboto-Regular-webfont.woff2") format("woff2"),
+    url("fonts/Roboto-Regular-webfont.woff") format("woff"),
+    url("fonts/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  width: 100%;
+  margin: auto;
+}
+
+.titre {
+  width: max-content;
+  margin: auto;
+  font-family: "shrikhandregular";
+  position: relative;
+  margin-top: -18px;
+}
+.fa-arrow-left:before {
+  position: absolute;
+  top: 29px;
+  left: 23px;
+  color: black;
+  font-size: large;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+  margin-top: -9px;
+}
+.fa-heart-o{
+  position: absolute;
+  right: 31px;
+  top:0;
+  
+}
+
+section {
+  background: violet;
+  
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-top: -53px;
+  padding-top: 5px;
+  position: relative;
+  background: rgb(244, 241, 241);
+  padding-bottom: 47px;
+}
+.menu {
+  margin-left: 15px;
+  font-family: "robotoregular";
+  font: menu;
+  position: relative;
+}
+span {
+  margin-left: 30px;
+  position: absolute;
+  left: 77%;
+}
+.titre2 {
+  font-family: "shrikhandregular";
+}
+.entrée1,
+.entrée2,
+.entrée3 {
+  margin-top: 10px;
+  background: white;
+  width: 98%;
+  padding-left: 7px;
+  margin-left: -6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 15px;
+  box-shadow: 2px 4px rgb(233, 231, 231);
+}
+.plat1,
+.plat2,
+.plat3 {
+  margin-top: 10px;
+  background: white;
+  width: 98%;
+  padding-left: 7px;
+  margin-left: -6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 15px;
+  box-shadow: 2px 4px rgb(233, 231, 231);
+}
+.dessert1,
+.dessert2,
+.dessert3 {
+  margin-top: 10px;
+  background: white;
+  width: 98%;
+  padding-left: 7px;
+  margin-left: -6px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 15px;
+  box-shadow: 2px 4px rgb(233, 231, 231);
+}
+h4 {
+  border: 3px solid #99e2d0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 12%;
+  padding-bottom: 6px;
+}
+.commander {
+  width: max-content;
+  margin: auto;
+  margin-top: 36px;
+  padding: 12px;
+  padding-left: 33px;
+  padding-right: 33px;
+  background: linear-gradient(#b85cdf, #ab29bf);
+  font-family: "robotoregular";
+  font-size: small;
+  border-radius: 20px;
+  box-shadow: 0px 4px rgb(237, 235, 235);
+}
+.commander a {
+  text-decoration: none;
+  color: white;
+}
+footer {
+  background: rgb(62, 60, 60);
+  height: 200px;
+  font-family: "robotoregular";
+  padding-top: 7px;
+}
+footer li {
+  list-style: none;
+}
+footer a,
+footer h3,
+footer i {
+  color: white;
+}
+footer i,
+footer a {
+  position: relative;
+  right: 20px;
+  font-size: 0.8em;
+}
+footer a {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin-left: 3px;
+}
+
+footer h3 {
+  font-family: "shrikhandregular";
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-top: 0%;
+  width: max-content;
+}
+@media (min-width: 768px) {
+  #entrées,
+  #plats,
+  #desserts,
+  .commander {
+    font-size: x-large;
+  }
+  h1 {
+    font-size: xx-large;
+  }
+
+  footer {
+    font-size: larger;
+  }
+}
+@media (min-width: 1024px) {
+  #bloc_page {
+    margin: 20px 30px 0 30px;
+  }
+  img {
+    display: none;
+  }
+  section {
+    
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  footer ul {
+    margin-left: 20px;
+  }
+  footer h3{
+    margin-left: 40px;
+  }
+}
