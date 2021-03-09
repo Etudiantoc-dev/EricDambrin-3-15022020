@@ -54,13 +54,15 @@ input {
   font-weight: normal;
 }
 #action h3 {
-  padding-top: 10px;
+  padding-top: 9px;
   width: max-content;
   margin: auto;
+  margin-bottom: -14px;
 }
 .suite_h3 {
   margin: auto;
   width: max-content;
+  margin-bottom: 10px;
 }
 h3 {
   font-family: "robotoregular";
