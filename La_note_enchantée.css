@@ -195,8 +195,9 @@
     }
   }
   @media (min-width: 1024px) {
-    #bloc_page {
-      margin: 20px 30px 0 30px;
+    body{
+      width: 95%;
+      margin: auto;
     }
     img {
       display: none;
@@ -205,9 +206,15 @@
       
       margin-top: 20px;
       padding-left: 20px;
+      
+    }
+    #hautpage{
+      position: relative;
+      
+
     }
     .menu{
-        margin-top: 104px;
+        margin-top: 34px;
     }
     footer ul {
         margin-left: 20px;
