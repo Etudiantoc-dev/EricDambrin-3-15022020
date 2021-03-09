@@ -45,7 +45,7 @@ img {
 
 section {
   background: violet;
-  width: 100%;
+  
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
   margin-top: -53px;
@@ -182,14 +182,13 @@ footer h3 {
 }
 @media (min-width: 1024px) {
   #bloc_page {
-    display: fle;
-    flex-direction: column-reverse;
     margin: 20px 30px 0 30px;
   }
   img {
     display: none;
   }
   section {
+    
     margin-top: 20px;
     padding-left: 20px;
   }

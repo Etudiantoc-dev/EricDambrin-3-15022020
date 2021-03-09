@@ -37,8 +37,8 @@ body {
   margin-left: 15px;
   font-size: 1em;
 }
-.logo_map {
-  margin-left: 15px;
+.logo_map { /*compromis car écart différent entre firefox et chrome!?*/
+  margin-left: 43px;
 }
 input {
   border: none;
@@ -159,7 +159,7 @@ p,
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 193.33px;
-  
+ 
   
 }
 
@@ -182,12 +182,13 @@ span {
   font-size: small;
   color: transparent;
   text-shadow: 0 0 1px #330;
+ 
 }
 .fa-heart-o {
   /*COEUR*/ /*comment avoir le traît moins large?*/
   position: absolute;
   right: 25px;
-  top: 16px;
+  top: 10px;
   font-size: 24px;
   transform: scale(1);
   transition-property: transform;
@@ -259,7 +260,7 @@ footer h3 {
   margin-top: 0%;
   width: max-content;
 }
-@media screen and (min-width: 768px) and (max-width: 1259px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
     max-width: 1259px;
   }
@@ -300,9 +301,9 @@ footer h3 {
 
   footer ul {
     width: 55%;
-    font-size: 1.3em;
+    font-size: 1.0em;
     list-style: none;
-    display: flex;
+    display: fle;/* je ne sais pas si bonne idée en flex?*/
   }
   .textimg {
     font-size: x-large;
@@ -316,7 +317,7 @@ footer h3 {
     font-size: x-large;
   }
 }
-@media (min-width: 1260px) {
+@media (min-width: 1024px) {
   #bloc_page {
     margin: 0 50px 0 50px;
   }
