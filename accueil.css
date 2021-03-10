@@ -33,7 +33,7 @@ body {
   width: max-content;
   margin: auto;
 }
-.texte {
+.texte0,.texte {
   margin-left: 15px;
   font-size: 1em;
 }
@@ -53,7 +53,7 @@ input {
   color: black;
   font-weight: normal;
 }
-#action h3 {
+.action h3 {
   padding-top: 9px;
   width: max-content;
   margin: auto;
@@ -69,7 +69,7 @@ h3 {
   font-size: 1.4em;
 }
 
-#action p {
+.action p {
   width: max-content;
   margin: auto;
   padding-top: 10px;
@@ -89,7 +89,7 @@ p,
   margin: auto;
   margin-top: 10px;
   padding: 12px;
-  background: linear-gradient(#b85cdf, #ab29bf);
+  background: linear-gradient(-6deg, #9356dc, #ff79da);
   font-family: "robotoregular";
   font-size: small;
   border-radius: 20px;
@@ -99,7 +99,7 @@ p,
   text-decoration: none;
   color: white;
 }
-#action {
+.action {
   background: rgb(244, 241, 241);
   padding-bottom: 20px;
 }
@@ -139,7 +139,7 @@ p,
 }
 
 
-#fonctionnement {
+.fonctionnement {
   width: 80%;
   margin-left: 20px;
   padding: 0 40px 10px 10px;
@@ -282,7 +282,7 @@ footer h3 {
   .logo_map,
   .logo,
   .logo1 {
-    font-size: x-large;
+    font-size: xx-large;
   }
   .suite_p {
     font-size: x-large;
@@ -326,20 +326,23 @@ footer h3 {
   }
   p,
   .titre,
-  #fonctionnement {
+  .fonctionnement {
     font-size: x-large;
   }
 }
 @media (min-width: 1150px) {
-  #bloc_page {
+  body{
+    
     margin: 0 50px 0 50px;
+    width: auto;
   }
-  #mediascreen {
+  #bloc_page {
+    
     display: flex;
-    justify-content: space-around;
   }
+  
   header {
-    width: 60%;
+    width: 50%;
   }
   .un__un,.deux__deux,.trois__trois{
     margin-top: 7px;
@@ -382,7 +385,7 @@ footer h3 {
     font-size: xx-large;
   }
   h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   p,
   .suite_p,
@@ -390,29 +393,66 @@ footer h3 {
   .logo1 {
     font-size: x-large;
   }
+  .logo, .logo1{
+    margin-top: 10px;
+  }
   .texte1,
-  .texte,
-  .logo_map {
+  .texte
+   {
     font-size: large;
+    margin-top: 12px;
   }
+  .texte0{
+    font-size: x-large;
+  }
+  .logo_map{
+    font-size: x-large;
+  }
+  .texte1{
+    margin-top: 15px;
+  }
+
  
-  #fonctionnement strong {
+  .fonctionnement strong {
     margin-left: 20%;
+    font-size: x-large;
+    position: relative;
+    top: 15px;
+    width: 100%;
+    margin: 41%;
   }
-  #fonctionnement {
-    margin-top: 20px;
-    width: 30%;
-    margin-top: 13px;
+  .fonctionnement {
+    
+    width: 50%;
+    margin-top: 43px;
   }
   .un,
   .deux,
   .trois {
-    margin-top: 25px;
+    margin-top: 26px;
+    padding:0px 28px 15px 13px; ;
+    margin-left: 43px;
+    margin-right: 10px;
   }
   .lien_restaurants {
     font-size: 1.2em;
   }
   .textimg {
     font-size: x-large;
+  }
+  .un__un,.deux__deux,.trois__trois{
+    margin-top: 20px;
+  }
+  .titre{
+    border: 1px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding-right: 100%;
+    box-shadow: 0px 4px rgb(237, 235, 235);
+  }
+  h1{
+    margin-left: 90%;
   }
 }
