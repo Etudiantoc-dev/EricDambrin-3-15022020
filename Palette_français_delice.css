@@ -69,7 +69,8 @@ section {
 span {
   margin-left: 30px;
   position: absolute;
-  left: 77%;
+  right: 60px;
+  
 }
 .titre2 {
   font-family: "shrikhandregular";
@@ -187,24 +188,39 @@ footer h3 {
     font-size: larger;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   body{
-    width: 95%;
+    width: auto;
+    margin: 0 50px 0 50px;
+  }
+  #section{
+    display: flex;
+    
+
+  }
+  section{
+    margin-top: -353px;
+  }
+  span{
+    position: absolute;
+  }
+  #entrées,#plats,#desserts{
+    position: relative;
+    font-size: large;
+    padding-right: 100px;
+  }
+  .plat1,.plat2,.plat3,.entrée1,.entrée2,.entrée3,.dessert1,.dessert2,.dessert3{
+    padding-right: 81px;
+   
+  }
+
+  .commander{
+    position: relative;
+    right: 114%;
   }
   
-  img {
-    display: none;
-  }
-  section {
-    
-    margin-top: 20px;
-    padding-left: 20px;
-  }
-  footer ul {
-    margin-left: 20px;
-  }
-  footer h3{
-    margin-left: 40px;
-  }
+  
+
+  
  
 }
