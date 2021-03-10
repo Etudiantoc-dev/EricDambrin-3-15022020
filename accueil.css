@@ -133,9 +133,11 @@ p,
   padding-left: 6px;
   font-size: small;
 }
-.trois{
+:hover.trois{
   background:#eee1ff ;
+  cursor: pointer;
 }
+
 
 #fonctionnement {
   width: 80%;
@@ -175,7 +177,7 @@ span {
   /* mot "nouveau"sur photos ne reste pas en place (haut à droite) 
     sur des formats visuels plus étendu jusqu'à 767px*/
   position: absolute;
-  left: 78%;
+  right: 15px;
   top: 11px;
   z-index: 1;
   background: #99e2d0;
@@ -193,19 +195,27 @@ span {
   right: 25px;
   top: 10px;
   font-size: 24px;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 1s;
+  
 }
-
+.fa-heart {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  opacity: 0;
+  color:#9356DC;
+  
+}
+:hover.fa-heart{
+  
+  opacity: 4;
+  cursor: pointer;
+  
+}
 :hover.fa-heart-o {
-  /*comment faire pour que le coeur fond blanc 
-    deviennent coeur fond violet au survol?? */
-
   
   
   cursor: pointer;
-  transform: scale(1.15);
+  
   
   
 }
@@ -263,7 +273,7 @@ footer h3 {
   margin-top: 0%;
   width: max-content;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 600px) and (max-width: 1150px) {
   body {
     max-width: 1259px;
   }
@@ -320,7 +330,7 @@ footer h3 {
     font-size: x-large;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1150px) {
   #bloc_page {
     margin: 0 50px 0 50px;
   }
@@ -330,6 +340,9 @@ footer h3 {
   }
   header {
     width: 60%;
+  }
+  .un__un,.deux__deux,.trois__trois{
+    margin-top: 7px;
   }
 
   #restos {
