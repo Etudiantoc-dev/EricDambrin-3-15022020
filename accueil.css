@@ -306,7 +306,7 @@ footer h3 {
     width: 55%;
     font-size: 1.0em;
     list-style: none;
-    display: fle;/* je ne sais pas si bonne idée en flex?*/
+    /* je ne sais pas si bonne idée en flex?*/
   }
   .textimg {
     font-size: x-large;
@@ -382,15 +382,14 @@ footer h3 {
   .logo_map {
     font-size: large;
   }
-  #section {
-    width: 40%;
-    margin-top: 12px;
-  }
+ 
   #fonctionnement strong {
     margin-left: 20%;
   }
   #fonctionnement {
     margin-top: 20px;
+    width: 30%;
+    margin-top: 13px;
   }
   .un,
   .deux,
