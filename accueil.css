@@ -331,7 +331,7 @@ footer h3 {
   }
 }
 @media (min-width: 1150px) {
-  body{
+  .formulaire,.action,.fonctionnement,aside,footer{
     
     margin: 0 50px 0 50px;
     width: auto;
@@ -425,6 +425,7 @@ footer h3 {
     
     width: 50%;
     margin-top: 43px;
+    
   }
   .un,
   .deux,
@@ -453,6 +454,6 @@ footer h3 {
     box-shadow: 0px 4px rgb(237, 235, 235);
   }
   h1{
-    margin-left: 90%;
+    margin-left: 100%;
   }
 }
