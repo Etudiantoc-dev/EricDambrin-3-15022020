@@ -33,11 +33,13 @@ body {
   width: max-content;
   margin: auto;
 }
-.texte0,.texte {
+.texte0,
+.texte {
   margin-left: 15px;
   font-size: 1em;
 }
-.logo_map { /*compromis car écart différent entre firefox et chrome!?*/
+.logo_map {
+  /*compromis car écart différent entre firefox et chrome!?*/
   margin-left: 43px;
 }
 input {
@@ -133,11 +135,10 @@ p,
   padding-left: 6px;
   font-size: small;
 }
-:hover.trois{
-  background:#eee1ff ;
+:hover.trois {
+  background: #eee1ff;
   cursor: pointer;
 }
-
 
 .fonctionnement {
   width: 80%;
@@ -164,12 +165,10 @@ p,
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 193.33px;
- 
-  
 }
 
-
-.textimg,.resto {
+.textimg,
+.resto {
   position: relative;
 }
 
@@ -187,7 +186,6 @@ span {
   font-size: small;
   color: transparent;
   text-shadow: 0 0 1px #330;
- 
 }
 .fa-heart-o {
   /*COEUR*/ /*comment avoir le traît moins large?*/
@@ -195,31 +193,22 @@ span {
   right: 25px;
   top: 10px;
   font-size: 24px;
-  
 }
 .fa-heart {
   position: absolute;
   right: 25px;
   top: 10px;
   opacity: 0;
-  color:#9356DC;
-  
+  color: #9356dc;
 }
-:hover.fa-heart{
-  
+:hover.fa-heart {
   opacity: 4;
   cursor: pointer;
-  
 }
 :hover.fa-heart-o {
-  
-  
   cursor: pointer;
-  
-  
-  
 }
-:focus .fa-heart-o{
+:focus .fa-heart-o {
   background-color: #9356dc;
 }
 
@@ -314,7 +303,7 @@ footer h3 {
 
   footer ul {
     width: 55%;
-    font-size: 1.0em;
+    font-size: 1em;
     list-style: none;
     /* je ne sais pas si bonne idée en flex?*/
   }
@@ -331,20 +320,24 @@ footer h3 {
   }
 }
 @media (min-width: 1150px) {
-  .formulaire,.action,.fonctionnement,aside,footer{
-    
+  .formulaire,
+  .action,
+  .fonctionnement,
+  aside,
+  footer {
     margin: 0 50px 0 50px;
     width: auto;
   }
   #bloc_page {
-    
     display: flex;
   }
-  
+
   header {
     width: 50%;
   }
-  .un__un,.deux__deux,.trois__trois{
+  .un__un,
+  .deux__deux,
+  .trois__trois {
     margin-top: 7px;
   }
 
@@ -393,26 +386,25 @@ footer h3 {
   .logo1 {
     font-size: x-large;
   }
-  .logo, .logo1{
+  .logo,
+  .logo1 {
     margin-top: 10px;
   }
   .texte1,
-  .texte
-   {
+  .texte {
     font-size: large;
     margin-top: 12px;
   }
-  .texte0{
+  .texte0 {
     font-size: x-large;
   }
-  .logo_map{
+  .logo_map {
     font-size: x-large;
   }
-  .texte1{
+  .texte1 {
     margin-top: 15px;
   }
 
- 
   .fonctionnement strong {
     margin-left: 20%;
     font-size: x-large;
@@ -422,16 +414,14 @@ footer h3 {
     margin: 41%;
   }
   .fonctionnement {
-    
     width: 50%;
     margin-top: 43px;
-    
   }
   .un,
   .deux,
   .trois {
     margin-top: 26px;
-    padding:0px 28px 15px 13px; ;
+    padding: 0px 28px 15px 13px;
     margin-left: 43px;
     margin-right: 10px;
   }
@@ -441,10 +431,12 @@ footer h3 {
   .textimg {
     font-size: x-large;
   }
-  .un__un,.deux__deux,.trois__trois{
+  .un__un,
+  .deux__deux,
+  .trois__trois {
     margin-top: 20px;
   }
-  .titre{
+  .titre {
     border: 1px solid grey;
     border-top: none;
     border-left: none;
@@ -453,7 +445,7 @@ footer h3 {
     padding-right: 100%;
     box-shadow: 0px 4px rgb(237, 235, 235);
   }
-  h1{
+  h1 {
     margin-left: 100%;
   }
 }

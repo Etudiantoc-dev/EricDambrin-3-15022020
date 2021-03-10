@@ -42,16 +42,15 @@ img {
   width: 100%;
   margin-top: -9px;
 }
-.fa-heart-o{
+.fa-heart-o {
   position: absolute;
   right: 31px;
-  top:0;
-  
+  top: 0;
 }
 
 section {
   background: violet;
-  
+
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
   margin-top: -53px;
@@ -70,7 +69,6 @@ span {
   margin-left: 30px;
   position: absolute;
   right: 60px;
-  
 }
 .titre2 {
   font-family: "shrikhandregular";
@@ -143,8 +141,7 @@ footer {
   background: rgb(62, 60, 60);
   height: 200px;
   font-family: "robotoregular";
-  padding-top: 7px
-  ;
+  padding-top: 7px;
 }
 footer li {
   list-style: none;
@@ -189,38 +186,40 @@ footer h3 {
   }
 }
 @media (min-width: 1440px) {
-  body{
+  body {
     width: auto;
     margin: 0 50px 0 50px;
   }
-  #section{
+  #section {
     display: flex;
-    
-
   }
-  section{
+  section {
     margin-top: -353px;
   }
-  span{
+  span {
     position: absolute;
   }
-  #entrées,#plats,#desserts{
+  #entrées,
+  #plats,
+  #desserts {
     position: relative;
     font-size: large;
     padding-right: 100px;
   }
-  .plat1,.plat2,.plat3,.entrée1,.entrée2,.entrée3,.dessert1,.dessert2,.dessert3{
+  .plat1,
+  .plat2,
+  .plat3,
+  .entrée1,
+  .entrée2,
+  .entrée3,
+  .dessert1,
+  .dessert2,
+  .dessert3 {
     padding-right: 81px;
-   
   }
 
-  .commander{
+  .commander {
     position: relative;
     right: 114%;
   }
-  
-  
-
-  
- 
 }
