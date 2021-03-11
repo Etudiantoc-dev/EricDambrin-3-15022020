@@ -197,14 +197,14 @@ footer h3 {
     margin-top: -353px;
   }
   span {
-    position: absolute;
+    margin-right: 24px;
   }
   #entrées,
   #plats,
   #desserts {
     position: relative;
     font-size: large;
-    padding-right: 100px;
+    padding-right: 125px;
   }
   .plat1,
   .plat2,
@@ -220,6 +220,6 @@ footer h3 {
 
   .commander {
     position: relative;
-    right: 114%;
+    right: 132%;
   }
 }
