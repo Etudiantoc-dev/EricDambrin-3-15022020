@@ -220,6 +220,8 @@ footer h3 {
   }
 
   .commander {
-    
+    position: relative;
+    top: 74px;
+    box-shadow:0 1.5px grey
   }
 }

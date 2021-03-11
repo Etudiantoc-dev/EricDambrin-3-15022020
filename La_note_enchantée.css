@@ -66,7 +66,7 @@
     padding-top: 5px;
     position: relative;
     background: rgb(244, 241, 241);
-    padding-bottom: 47px;
+    padding-bottom: 51px;
   }
   .menu {
     margin-left: 15px;
@@ -221,5 +221,49 @@
         margin-left: 40px;
       }
    
+  }@media (min-width: 1440px) {
+    body {
+      width: auto;
+      margin: 0 50px 0 50px;
+    }
+    #section {
+      display: flex;
+      justify-content: space-around;
+    }
+    section {
+      margin-top: -546px;
+    }
+    span {
+      margin-right: 24px;
+    }
+    .entrée4{
+      padding-right: 80px;
+    }
+    #entrées,
+    #plats,
+    #desserts {
+      position: relative;
+      font-size: large;
+      padding-right: 99px;
+    }
+    .plat1,
+    .plat2,
+    .plat3,
+    .entrée1,
+    .entrée2,
+    .entrée3,
+    .dessert1,
+    .dessert2,
+    .dessert3 {
+      padding-right: 81px;
+    }
+  
+    .commander {
+      position: relative;
+      top: 74px;
+      right: 96%;
+      box-shadow:0 1.5px grey
+    }
   }
+
   
