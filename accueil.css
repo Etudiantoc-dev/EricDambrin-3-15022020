@@ -204,13 +204,12 @@ span {
 :hover.fa-heart {
   opacity: 4;
   cursor: pointer;
+  font-size: 24px;
 }
 :hover.fa-heart-o {
   cursor: pointer;
 }
-:focus .fa-heart-o {
-  background-color: #9356dc;
-}
+
 
 .textimg {
   font-family: "robotoregular";
@@ -305,6 +304,7 @@ footer h3 {
     width: 55%;
     font-size: 1em;
     list-style: none;
+    margin-top: -16px;
     /* je ne sais pas si bonne idée en flex?*/
   }
   .textimg {
@@ -443,7 +443,7 @@ footer h3 {
     border-right: none;
     width: 100%;
     padding-right: 100%;
-    box-shadow: 0px 4px rgb(237, 235, 235);
+    box-shadow: 0px 2px rgb(237, 235, 235);
   }
   h1 {
     margin-left: 100%;
