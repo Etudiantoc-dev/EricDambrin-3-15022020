@@ -127,7 +127,7 @@ h4 {
   padding: 12px;
   padding-left: 33px;
   padding-right: 33px;
-  background: linear-gradient(#b85cdf, #ab29bf);
+  background: linear-gradient(-6deg, #9356dc, #ff79da);
   font-family: "robotoregular";
   font-size: small;
   border-radius: 20px;
@@ -136,6 +136,21 @@ h4 {
 .commander a {
   text-decoration: none;
   color: white;
+}
+.fa-heart {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  opacity: 0;
+  color: #9356dc;
+}
+:hover.fa-heart {
+  opacity: 4;
+  cursor: pointer;
+  font-size: 24px;
+}
+:hover.fa-heart-o {
+  cursor: pointer;
 }
 footer {
   background: rgb(62, 60, 60);
@@ -184,6 +199,21 @@ footer h3 {
   footer {
     font-size: larger;
   }
+  .fa-heart {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    opacity: 0;
+    color: #9356dc;
+  }
+  :hover.fa-heart {
+    opacity: 4;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  :hover.fa-heart-o {
+    cursor: pointer;
+  }
 }
 @media (min-width: 1440px) {
   body {
@@ -223,5 +253,20 @@ footer h3 {
     position: relative;
     top: 74px;
     box-shadow:0 1.5px grey
+  }
+  .fa-heart {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    opacity: 0;
+    color: #9356dc;
+  }
+  :hover.fa-heart {
+    opacity: 4;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  :hover.fa-heart-o {
+    cursor: pointer;
   }
 }
