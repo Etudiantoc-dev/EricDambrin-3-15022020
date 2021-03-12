@@ -46,6 +46,10 @@ input {
   border: none;
   background: none;
 }
+input:focus{
+  border: none;
+  outline: none;
+}
 .formulaire {
   background: rgb(235, 233, 233);
   padding: 15px 0 15px 0;
@@ -173,8 +177,7 @@ p,
 }
 
 span {
-  /* mot "nouveau"sur photos ne reste pas en place (haut à droite) 
-    sur des formats visuels plus étendu jusqu'à 767px*/
+  
   position: absolute;
   right: 15px;
   top: 11px;
@@ -188,7 +191,7 @@ span {
   text-shadow: 0 0 1px #330;
 }
 .fa-heart-o {
-  /*COEUR*/ /*comment avoir le traît moins large?*/
+ 
   position: absolute;
   right: 25px;
   top: 10px;
