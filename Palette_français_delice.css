@@ -12,11 +12,92 @@
   font-weight: normal;
   font-style: normal;
 }
-/*ANIMATION*/
+
+
+
 body {
   width: 100%;
   margin: auto;
+ 
 }
+
+.entrée1 {
+ animation: fadein 1s;
+ position: relative;
+ cursor: pointer;
+ }
+ .check{
+  position:absolute;
+  right: 0%;
+  bottom: 0%;
+  background: #99e2d0;
+  width: 13%;
+  height: 100%;
+  border-top-right-radius:15px ;
+  border-bottom-right-radius: 15px;
+  transition:all .5s ease-in;
+}
+.entrée1 :target{
+  right: 0;
+}
+@keyframes check{
+  from{
+    transform: translateX(-9999px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+
+.fa-check-circle{
+  margin-left: 12px;
+  margin-top: 17px;
+  font-size: 1.5em;
+  background: #99e2d0;
+  border-radius: 100%;
+  color: white;
+}
+
+
+
+.entrée2{
+  animation: fadein 2s;
+}
+.entrée3{
+  animation: fadein 3s;
+} 
+.plat1{
+  animation: fadein 4s;
+}
+.plat2{
+  animation: fadein 5s;
+}
+.plat3
+{
+  animation: fadein 6s;
+}
+.dessert1{
+  animation: fadein 7s;
+}
+.dessert2{
+  animation: fadein 8s;
+}
+.dessert3{
+  animation: fadein 9s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+
+
 
 .titre {
   width: max-content;
@@ -67,8 +148,10 @@ section {
 span {
   margin-left: 30px;
   position: absolute;
-  right: 60px;
+  right: 20px;
+  
 }
+
 
 .titre2 {
   font-family: "shrikhandregular";
@@ -79,7 +162,7 @@ span {
 .entrée3 {
   margin-top: 10px;
   background: white;
-  width: 98%;
+  width: 100%;
   padding-left: 7px;
   margin-left: -6px;
   padding-top: 12px;
@@ -206,6 +289,10 @@ footer h3 {
 #desserts,
 .commander {
     font-size: x-large;
+  }
+  span{
+    position: absolute;
+    right: 45px;
   }
 
   h1 {
