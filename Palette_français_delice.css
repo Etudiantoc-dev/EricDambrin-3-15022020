@@ -12,92 +12,52 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
-
-body {
-  width: 100%;
-  margin: auto;
- 
+/*ANIMATION*/
+.proposition:hover + .check {
+  transform: scaleX(1);
+}
+.proposition:hover + .check i {
+  transform: translateX(0);
 }
 
-.entrée1 {
- animation: fadein 1s;
- position: relative;
- cursor: pointer;
- }
- .check{
-  position:absolute;
+.check {
+  transform: scaleX(0);
+  transform-origin: 100% 0%;
+  transition: transform 0.4s ease-in-out;
+  position: absolute;
   right: 0%;
   bottom: 0%;
   background: #99e2d0;
   width: 13%;
   height: 100%;
-  border-top-right-radius:15px ;
+  border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition:all .5s ease-in;
 }
-.entrée1 :target{
-  right: 0;
-}
-@keyframes check{
-  from{
-    transform: translateX(-9999px);
-  }
-  to{
-    transform: translateX(0);
-  }
+.check i {
+  display: inline-block;
+  transition: transform 0.35s ease-in-out;
+  transform: rotate(180deg);
 }
 
-
-.fa-check-circle{
-  margin-left: 12px;
-  margin-top: 17px;
+.fa-check-circle {
+  margin-left: 15px;
+  margin-top: 18px;
   font-size: 1.5em;
   background: #99e2d0;
   border-radius: 100%;
   color: white;
 }
 
-
-
-.entrée2{
-  animation: fadein 2s;
-}
-.entrée3{
-  animation: fadein 3s;
-} 
-.plat1{
-  animation: fadein 4s;
-}
-.plat2{
-  animation: fadein 5s;
-}
-.plat3
-{
-  animation: fadein 6s;
-}
-.dessert1{
-  animation: fadein 7s;
-}
-.dessert2{
-  animation: fadein 8s;
-}
-.dessert3{
-  animation: fadein 9s;
+.entrée1 {
+  animation: fadein 1s;
+  position: relative;
+  cursor: pointer;
 }
 
-@keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
+body {
+  width: 100%;
+  margin: auto;
 }
-
-
-
 
 .titre {
   width: max-content;
@@ -146,12 +106,10 @@ section {
 }
 
 span {
-  margin-left: 30px;
-  position: absolute;
-  right: 20px;
   
+  position: absolute;
+  right: 23px;
 }
-
 
 .titre2 {
   font-family: "shrikhandregular";
@@ -162,7 +120,7 @@ span {
 .entrée3 {
   margin-top: 10px;
   background: white;
-  width: 100%;
+  width: 98%;
   padding-left: 7px;
   margin-left: -6px;
   padding-top: 12px;
@@ -289,10 +247,6 @@ footer h3 {
 #desserts,
 .commander {
     font-size: x-large;
-  }
-  span{
-    position: absolute;
-    right: 45px;
   }
 
   h1 {

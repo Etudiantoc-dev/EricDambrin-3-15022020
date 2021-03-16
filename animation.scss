@@ -13,7 +13,57 @@
   font-style: normal;
 }
 /*ANIMATION*/
+.proposition{
+    &:hover + .check{
+        transform: scaleX(1);
+        
+        
+        
+        i{
+          transform: translateX(0);
+        }
+
+}
+}
+
+.check{
   
+  transform: scaleX(0);
+  transform-origin: 100% 0%;
+  transition: transform 0.4s ease-in-out;
+  position:absolute;
+  right: 0%;
+  bottom: 0%;
+  background: #99e2d0;
+  width: 13%;
+  height: 100%;
+  border-top-right-radius:15px ;
+  border-bottom-right-radius: 15px;
+    i{
+      display: inline-block;
+      transition: transform 0.35s ease-in-out;
+      transform: rotate(180deg);
+      
+      
+    }
+}
+.fa-check-circle{
+  margin-left: 15px;
+  margin-top: 18px;
+  font-size: 1.5em;
+  background: #99e2d0;
+  border-radius: 100%;
+  color: white;
+  
+}
+
+.entrée1 {
+  animation: fadein 1s;
+  position: relative;
+  cursor: pointer;
+  
+ 
+  }
 
 
 
