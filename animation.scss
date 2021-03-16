@@ -13,6 +13,26 @@
   font-style: normal;
 }
 /*ANIMATION*/
+
+.anim_entrées{
+  
+  transform-origin: 0% 100%;
+  animation: progress-menu 3s ;
+  
+}
+@keyframes progress-menu{
+  0%{
+   transform:translateY(0) ;
+    transform: scaleY(0);
+  }
+  100%{
+   
+   transform: scaleY(1);
+   transform: translateY(1%);
+  }
+}
+
+
 .proposition{
     &:hover + .check{
         transform: scaleX(1);
@@ -43,6 +63,7 @@
   }
 }
 
+
 .check{
   
   transform: scaleX(0);
@@ -69,11 +90,9 @@
 }
 
 .entrée1 {
-  animation: fadein 1s;
+  
   position: relative;
   cursor: pointer;
-  
- 
   }
 
 
@@ -110,6 +129,23 @@ img {
   right: 31px;
   top: 0;
 }
+.fa-heart {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  opacity: 0;
+  color: #9356dc;
+}
+
+:hover.fa-heart {
+  opacity: 4;
+  cursor: pointer;
+  font-size: 24px;
+  color: #9356dc;
+
+}
+
+
 
 section {
   background: violet;
