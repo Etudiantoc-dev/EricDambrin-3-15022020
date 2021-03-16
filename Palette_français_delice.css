@@ -17,9 +17,26 @@
   transform: scaleX(1);
 }
 .proposition:hover + .check i {
-  transform: translateX(0);
+  animation: progress-i 0.5s;
 }
 
+@keyframes progress-i {
+  0% {
+    transform: scaleX(0) rotate(0deg);
+  }
+  17% {
+    transform: scaleX(0.18) rotate(20deg);
+  }
+  24% {
+    transform: scaleX(0.2) rotate(30deg);
+  }
+  46% {
+    transform: scaleX(0.4) rotate(40deg);
+  }
+  100% {
+    transform: scaleX(1) rotate(360deg);
+  }
+}
 .check {
   transform: scaleX(0);
   transform-origin: 100% 0%;
@@ -32,11 +49,6 @@
   height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-.check i {
-  display: inline-block;
-  transition: transform 0.35s ease-in-out;
-  transform: rotate(180deg);
 }
 
 .fa-check-circle {
@@ -106,9 +118,9 @@ section {
 }
 
 span {
-  
+  margin-left: 30px;
   position: absolute;
-  right: 23px;
+  right: 60px;
 }
 
 .titre2 {
