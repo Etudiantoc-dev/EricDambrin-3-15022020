@@ -13,21 +13,6 @@
   font-style: normal;
 }
 /*ANIMATION*/
-.anim_entrées {
-  transform-origin: 0% 100%;
-  animation: progress-menu 3s;
-}
-
-@keyframes progress-menu {
-  0% {
-    transform: translateY(0);
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-    transform: translateY(1%);
-  }
-}
 .proposition:hover + .check {
   transform: scaleX(1);
 }
@@ -76,6 +61,7 @@
 }
 
 .entrée1 {
+  animation: fadein 1s;
   position: relative;
   cursor: pointer;
 }
@@ -226,23 +212,26 @@ h4 {
   color: white;
 }
 
+.fa-heart-o {
+ 
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  font-size: 24px;
+}
 .fa-heart {
   position: absolute;
   right: 25px;
   top: 10px;
-  opacity: 0;
+  opacity: 1;
   color: #9356dc;
 }
-
 :hover.fa-heart {
   opacity: 4;
-  cursor: pointer;
+  
   font-size: 24px;
 }
 
-:hover.fa-heart-o {
-  cursor: pointer;
-}
 
 footer {
   background: #3e3c3c;
@@ -308,13 +297,10 @@ footer h3 {
 
   :hover.fa-heart {
     opacity: 4;
-    cursor: pointer;
     font-size: 24px;
   }
 
-  :hover.fa-heart-o {
-    cursor: pointer;
-  }
+  
 }
 @media (min-width: 1440px) {
   body {
@@ -360,6 +346,13 @@ footer h3 {
     top: 74px;
     box-shadow: 0 1.5px grey;
   }
+  .fa-heart-o {
+ 
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 24px;
+  }
 
   .fa-heart {
     position: absolute;
@@ -375,9 +368,7 @@ footer h3 {
     font-size: 24px;
   }
 
-  :hover.fa-heart-o {
-    cursor: pointer;
-  }
+ 
 }
 /*# sourceMappingURL=animation.css.map */
 
