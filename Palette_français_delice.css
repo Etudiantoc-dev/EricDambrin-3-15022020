@@ -13,19 +13,49 @@
   font-style: normal;
 }
 /*ANIMATION*/
-.anim_entrées {
-  transform-origin: 0% 100%;
-  animation: progress-menu 3s;
+.entrée1 {
+  animation: progress-menu 1.5s;
+}
+
+.entrée2 {
+  animation: progress-menu 1.5s 150ms;
+}
+
+.entrée3 {
+  animation: progress-menu 1.5s 300ms;
+}
+
+.plat1 {
+  animation: progress-menu 1.5s 450ms;
+}
+
+.plat2 {
+  animation: progress-menu 1.5s 600ms;
+}
+
+.plat3 {
+  animation: progress-menu 1.5s 750ms;
+}
+
+.dessert1 {
+  animation: progress-menu 1.5s 900ms;
+}
+
+.dessert2 {
+  animation: progress-menu 1.5s 1050ms;
+}
+
+.dessert3 {
+  animation: progress-menu 1.5s 1200ms;
 }
 
 @keyframes progress-menu {
   0% {
-    transform: translateY(0);
-    transform: scaleY(0);
+    transform: translateY(10px);
+    opacity: 0;
   }
   100% {
-    transform: scaleY(1);
-    transform: translateY(1%);
+    transform: translateY(0);
   }
 }
 .proposition:hover + .check {
@@ -75,7 +105,7 @@
   color: white;
 }
 
-.entrée1 {
+.entrée1, .entrée2, .entrée3, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
   position: relative;
   cursor: pointer;
 }
@@ -109,8 +139,8 @@ img {
 
 .fa-heart-o {
   position: absolute;
-  right: 31px;
-  top: 0;
+  right: 25px;
+  top: 10px;
 }
 
 .fa-heart {
@@ -147,9 +177,8 @@ section {
 }
 
 span {
-  margin-left: 30px;
   position: absolute;
-  right: 60px;
+  right: 20px;
 }
 
 .titre2 {
@@ -309,7 +338,7 @@ footer h3 {
   :hover.fa-heart {
     opacity: 4;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 32px;
   }
 
   :hover.fa-heart-o {
@@ -372,7 +401,7 @@ footer h3 {
   :hover.fa-heart {
     opacity: 4;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 32px;
   }
 
   :hover.fa-heart-o {
