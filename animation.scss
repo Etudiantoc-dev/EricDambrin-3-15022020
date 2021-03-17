@@ -56,16 +56,27 @@
 
 
 .proposition{
+  &:hover,span  {
+    
+    
+    
+    transform: translate(0px);
+    
+    
+  }
+ 
     &:hover + .check{
         transform: scaleX(1);
-    
+        
         i{
           
-          animation: progress-i 0.5s;
+          animation: progress-i 0.4s;
         }
       }
 
 }
+
+
 @keyframes progress-i{
   
     0% {
@@ -84,6 +95,8 @@
       transform: scaleX(1)rotate(360deg);
   }
 }
+
+
 
 
 .check{

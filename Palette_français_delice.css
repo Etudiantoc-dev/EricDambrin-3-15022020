@@ -58,11 +58,14 @@
     transform: translateY(0);
   }
 }
+.proposition:hover, .proposition span {
+  transform: translate(0px);
+}
 .proposition:hover + .check {
   transform: scaleX(1);
 }
 .proposition:hover + .check i {
-  animation: progress-i 0.5s;
+  animation: progress-i 0.4s;
 }
 
 @keyframes progress-i {
