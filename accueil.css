@@ -209,6 +209,9 @@ span {
   cursor: pointer;
   font-size: 24px;
 }
+:hover.fa-heart-o {
+  cursor: pointer;
+}
 
 
 .textimg {
@@ -262,9 +265,7 @@ footer h3 {
   width: max-content;
 }
 @media screen and (min-width: 600px) and (max-width: 1150px) {
-  body {
-    max-width: 1259px;
-  }
+ 
   .texte,
   .texte1,
   .logo_map,
@@ -320,20 +321,20 @@ footer h3 {
   }
 }
 @media (min-width: 1150px) {
-  .formulaire,
-  .action,
-  .fonctionnement,
-  aside,
-  footer {
-    margin: 0 50px 0 50px;
-    width: auto;
-  }
   #bloc_page {
+    
+    margin:0 50px 0 50px;
+  }
+  .header_flex{
     display: flex;
   }
+  
 
   header {
     width: 50%;
+  }
+  .action{
+    padding-bottom: 32px;
   }
   .un__un,
   .deux__deux,
@@ -447,5 +448,8 @@ footer h3 {
   }
   h1 {
     margin-left: 100%;
+  }
+  aside{
+    margin-top: -15px;
   }
 }
