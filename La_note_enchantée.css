@@ -78,17 +78,8 @@
   46% {
     transform: scaleX(0.4) rotate(40deg);
   }
-<<<<<<< HEAD
-  
-  img {
-    width: 100%;
-    height: 50%;
-    margin-top: -9px;
-    
-=======
   100% {
     transform: scaleX(1) rotate(360deg);
->>>>>>> correction-menu-et-prix-
   }
 }
 .check {
