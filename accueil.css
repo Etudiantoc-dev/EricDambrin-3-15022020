@@ -321,16 +321,18 @@ footer h3 {
   }
 }
 @media (min-width: 1150px) {
+ 
   #bloc_page {
     
     margin:0 50px 0 50px;
+    
   }
-  .header_flex{
+  #header_flex{
     display: flex;
   }
   
 
-  header {
+  section {
     width: 50%;
   }
   .action{
@@ -437,7 +439,7 @@ footer h3 {
   .trois__trois {
     margin-top: 20px;
   }
-  .titre {
+  header {
     border: 1px solid grey;
     border-top: none;
     border-left: none;
