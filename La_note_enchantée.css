@@ -135,6 +135,8 @@ body {
 img {
   width: 100%;
   margin-top: -9px;
+  height: 250.02px;
+  object-fit: cover;
 }
 
 .fa-heart-o {
@@ -353,6 +355,7 @@ footer h3 {
   }
   img{
     height: 1050px;
+    object-fit: cover;
   }
 
   #section {
