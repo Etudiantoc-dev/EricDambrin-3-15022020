@@ -56,6 +56,7 @@
 
 
 .proposition{
+<<<<<<< HEAD
   &:hover,span  {
     
     
@@ -71,12 +72,23 @@
         i{
           
           animation: progress-i 0.4s;
+=======
+    &:hover + .check{
+        transform: scaleX(1);
+    
+        i{
+          
+          animation: progress-i 0.5s;
+>>>>>>> correction-menu-et-prix-
         }
       }
 
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> correction-menu-et-prix-
 @keyframes progress-i{
   
     0% {
@@ -97,14 +109,21 @@
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> correction-menu-et-prix-
 .check{
   
   transform: scaleX(0);
   transform-origin: 100% 0%;
   transition: transform 0.4s ease-in-out;
+<<<<<<< HEAD
   position:absolute;
+=======
+  position:absolute;/* non*/
+>>>>>>> correction-menu-et-prix-
   right: 0%;
   bottom: 0%;
   background: #99e2d0;

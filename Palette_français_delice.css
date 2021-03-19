@@ -58,14 +58,21 @@
     transform: translateY(0);
   }
 }
+<<<<<<< HEAD
 .proposition:hover, .proposition span {
   transform: translate(0px);
 }
+=======
+>>>>>>> correction-menu-et-prix-
 .proposition:hover + .check {
   transform: scaleX(1);
 }
 .proposition:hover + .check i {
+<<<<<<< HEAD
   animation: progress-i 0.4s;
+=======
+  animation: progress-i 0.5s;
+>>>>>>> correction-menu-et-prix-
 }
 
 @keyframes progress-i {
@@ -99,6 +106,10 @@
   border-bottom-right-radius: 15px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> correction-menu-et-prix-
 .fa-check-circle {
   margin-left: 15px;
   margin-top: 18px;
@@ -109,9 +120,20 @@
 }
 
 .entrée1, .entrée2, .entrée3, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
+<<<<<<< HEAD
   position: relative;
   cursor: pointer;
 }
+=======
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.prix{
+  margin-top: 18px;
+  margin-right: 17px;
+}
+>>>>>>> correction-menu-et-prix-
 
 body {
   width: 100%;
@@ -138,6 +160,8 @@ body {
 img {
   width: 100%;
   margin-top: -9px;
+  height: 250.02px;
+  object-fit: cover;
 }
 
 .fa-heart-o {
@@ -179,10 +203,17 @@ section {
   position: relative;
 }
 
+<<<<<<< HEAD
 span {
   position: absolute;
   right: 20px;
 }
+=======
+
+
+
+
+>>>>>>> correction-menu-et-prix-
 
 .titre2 {
   font-family: "shrikhandregular";
@@ -358,6 +389,10 @@ footer h3 {
     display: flex;
     justify-content: space-around;
   }
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> correction-menu-et-prix-
 
   section {
     margin-top: -353px;
@@ -370,11 +405,16 @@ footer h3 {
   #entrées,
 #plats,
 #desserts {
+<<<<<<< HEAD
     position: relative;
+=======
+    width: 30%;
+>>>>>>> correction-menu-et-prix-
     font-size: large;
-    padding-right: 125px;
+    
   }
 
+<<<<<<< HEAD
   .plat1,
 .plat2,
 .plat3,
@@ -385,7 +425,16 @@ footer h3 {
 .dessert2,
 .dessert3 {
     padding-right: 81px;
+=======
+  img{
+    height: 1050px;
+    object-fit: cover;
+   
+>>>>>>> correction-menu-et-prix-
   }
+   
+  
+ 
 
   .commander {
     position: relative;
