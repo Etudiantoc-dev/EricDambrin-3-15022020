@@ -96,6 +96,7 @@
   border-bottom-right-radius: 15px;
 }
 
+
 .fa-check-circle {
   margin-left: 15px;
   margin-top: 18px;
@@ -106,8 +107,13 @@
 }
 
 .entrée1, .entrée2, .entrée3, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
+}
+.prix{
+  margin-top: 18px;
+  margin-right: 17px;
 }
 
 body {
@@ -176,10 +182,10 @@ section {
   position: relative;
 }
 
-span {
-  position: absolute;
-  right: 20px;
-}
+
+
+
+
 
 .titre2 {
   font-family: "shrikhandregular";
@@ -368,21 +374,16 @@ footer h3 {
   #entrées,
 #plats,
 #desserts {
-    position: relative;
+    width: 30%;
     font-size: large;
-    padding-right: 125px;
+    
   }
 
-  .plat1,
-.plat2,
-.plat3,
-.entrée1,
-.entrée2,
-.entrée3,
-.dessert1,
-.dessert2,
-.dessert3 {
-    padding-right: 81px;
+  
+   
+  
+  .prix{
+   
   }
 
   .commander {
