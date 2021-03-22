@@ -191,7 +191,7 @@ section {
 
 
 
-.titre2 {
+.type {
   font-family: "shrikhandregular";
 }
 
@@ -361,7 +361,7 @@ footer h3 {
     margin: 0 50px 0 50px;
   }
 
-  #section {
+  #sous_menu {
     display: flex;
     justify-content: space-around;
   }
