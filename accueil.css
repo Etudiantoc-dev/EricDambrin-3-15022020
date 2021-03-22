@@ -25,7 +25,7 @@ body {
 .titre {
   width: max-content;
   margin: auto;
-  font-family: "shrikhandregular";
+  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
 }
 #quartier {
   display: flex;
@@ -87,7 +87,7 @@ h3 {
 }
 p,
 .suite_p {
-  font-family: "robotoregular";
+  font-family: "robotoregular",Arial, Helvetica, sans-serif;
   color: rgb(128, 125, 125);
 }
 .lien_restaurants {
@@ -215,7 +215,7 @@ span {
 
 
 .textimg {
-  font-family: "robotoregular";
+  font-family: "robotoregular",Arial, Helvetica, sans-serif;
   margin-left: 10px;
   padding-bottom: 10px;
   padding-top: 5px;
@@ -235,7 +235,7 @@ span {
 footer {
   background: rgb(62, 60, 60);
   height: 200px;
-  font-family: "robotoregular";
+  font-family: "robotoregular",Arial, Helvetica, sans-serif;
 }
 footer li {
   list-style: none;
@@ -258,7 +258,7 @@ footer a {
 }
 
 footer h3 {
-  font-family: "shrikhandregular";
+  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
