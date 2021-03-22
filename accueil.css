@@ -65,7 +65,7 @@ input:focus{
   margin: auto;
   margin-bottom: -14px;
 }
-.suite_h3 {
+.suite_action_h3 {
   margin: auto;
   width: max-content;
   margin-bottom: 10px;
@@ -327,7 +327,7 @@ footer h3 {
     margin:0 50px 0 50px;
     
   }
-  #header_flex{
+  #point_break_1150{
     display: flex;
   }
   
