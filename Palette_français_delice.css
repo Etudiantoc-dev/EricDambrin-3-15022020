@@ -98,6 +98,32 @@
   .check i{
     margin-right: 14px;
   }
+  :hover .prix + .check i {
+    animation: progress-i 0.5s;
+   
+  }
+  
+    
+  
+  
+  
+  @keyframes progress-i {
+    0% {
+      transform: scaleX(0) rotate(0deg);
+    }
+    17% {
+      transform: scaleX(0.18) rotate(20deg);
+    }
+    24% {
+      transform: scaleX(0.2) rotate(30deg);
+    }
+    46% {
+      transform: scaleX(0.4) rotate(40deg);
+    }
+    100% {
+      transform: scaleX(1) rotate(360deg);
+    }
+  }
 
 
 /*ANIMATION*/
@@ -147,32 +173,7 @@
   }
 
 }
-:hover .prix + .check i {
-  animation: progress-i 0.5s;
- 
-}
 
-  
-
-
-
-@keyframes progress-i {
-  0% {
-    transform: scaleX(0) rotate(0deg);
-  }
-  17% {
-    transform: scaleX(0.18) rotate(20deg);
-  }
-  24% {
-    transform: scaleX(0.2) rotate(30deg);
-  }
-  46% {
-    transform: scaleX(0.4) rotate(40deg);
-  }
-  100% {
-    transform: scaleX(1) rotate(360deg);
-  }
-}
 
 
 .fa-check-circle {
@@ -453,9 +454,7 @@ footer h3 {
     margin-top: -353px;
   }
 
-  span {
-    margin-right: 24px;
-  }
+ 
 
   #entrées,
   #plats,
