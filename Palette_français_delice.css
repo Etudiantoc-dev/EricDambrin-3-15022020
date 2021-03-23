@@ -18,6 +18,43 @@
   font-weight: normal;
   font-style: normal;
 }
+/*test anmation sur entrée1*/
+.entrée1 .proposition{
+  text-overflow: ellipsis;
+  /* padding: 15px; */
+  overflow: hidden;
+  padding-right: 80px;
+}
+.entrée1  .prix{
+  background: sandybrown;
+  /* line-height: 66px; */
+  text-align: center;
+  width: 76px;
+  margin-top: -12px;
+  padding-top: 29px;
+  margin-bottom: -11px;
+  margin-right: -45px;
+}
+.entrée1  .check{
+  
+    flex: 0;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: -3%;
+    margin-top: -12px;
+}
+:hover .entrée1  +.prix  {
+  transform: translateX(-100%);
+  
+}
+:hover .entrée1 .check{
+ overflow:visible;
+  }
+  .check i{
+    margin-right: 14px;
+  }
+
+
 /*ANIMATION*/
 .entrée1 {
   animation: progress-menu 1.5s;
@@ -65,8 +102,8 @@
   }
 }
 .proposition:hover,
-.proposition span {
-  transform: translate(0px);
+.proposition .prix {
+  transform: translate(0);
 }
 .proposition:hover + .check {
   transform: scaleX(1);
@@ -93,15 +130,15 @@
   }
 }
 .check {
-  transform: scaleX(0);
+  transform: scaleX();
   transform-origin: 100% 0%;
   transition: transform 0.4s ease-in-out;
-  position: absolute;
+  position: absolut;
   right: 0%;
   bottom: 0%;
   background: #99e2d0;
-  width: 13%;
-  height: 100%;
+  width: 13;
+  height: 100;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
