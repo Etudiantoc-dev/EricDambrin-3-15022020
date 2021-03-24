@@ -39,7 +39,7 @@
   border-bottom-right-radius: 15px;
 }
 
-:hover .prix + .check {
+.prix:hover + .check {
   animation: progress-check 0.4s;
 }
 
@@ -60,7 +60,7 @@
     transform: translateX(0);
   }
 }
-:hover .proposition + .prix {
+.proposition:hover + .prix {
   animation: progress-prix 0.3s;
 }
 
@@ -81,11 +81,11 @@
     transform: translateX(0);
   }
 }
-:hover .entrée1 .check {
+.entrée1:hover .check {
   overflow: visible;
 }
 
-:hover .entrée2 .check {
+.entrée2:hover .check {
   overflow: visible;
 }
 
@@ -93,7 +93,7 @@
   margin-right: 14px;
 }
 
-:hover .prix + .check i {
+.prix:hover + .check i {
   animation: progress-i 0.5s;
 }
 

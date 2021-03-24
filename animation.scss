@@ -51,7 +51,7 @@
 }
 
 
-:hover .prix  +.check {
+.prix:hover   +.check {
   animation: progress-check 0.4s ;
 
 
@@ -82,7 +82,7 @@
     
   }
 }
-:hover .proposition +.prix{
+.proposition:hover  +.prix{
   animation: progress-prix 0.3s;
 }
 @keyframes progress-prix{
@@ -104,16 +104,16 @@
   }
 }
 
-:hover .entrée1 .check{
+.entrée1:hover  .check{
  overflow:visible;
   }
-  :hover .entrée2 .check{
+  .entrée2:hover  .check{
     overflow:visible;
      }
   .check i{
     margin-right: 14px;
   }
-  :hover .prix + .check i {
+  .prix:hover  + .check i {
     animation: progress-i 0.5s;
    
   }
