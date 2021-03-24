@@ -1,35 +1,44 @@
 @charset "UTF-8";
 @font-face {
   font-family: "shrikhandregular";
-  src: url("fonts/shrikhand-regular.woff2") format("woff2"), url("fonts/shrikhand-regular.woff") format("woff");
+  src: url("fonts/shrikhand-regular.woff2") format("woff2"),
+    url("fonts/shrikhand-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoregular";
   src: url("fonts/Roboto-Regular-webfont.eot");
-  src: url("fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Regular-webfont.woff2") format("woff2"), url("fonts/Roboto-Regular-webfont.woff") format("woff"), url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("fonts/Roboto-Regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/Roboto-Regular-webfont.woff2") format("woff2"),
+    url("fonts/Roboto-Regular-webfont.woff") format("woff"),
+    url("fonts/Roboto-Regular-webfont.ttf") format("truetype"),
+    url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
+
+
 /*test anmation sur entrée1*/
-.entrée1 .proposition{
+ .proposition{
   text-overflow: ellipsis;
   /* padding: 15px; */
   overflow: hidden;
   flex: 1;
 }
-.entrée1  .prix{
+ .prix{
   
   /* line-height: 66px; */
   text-align: center;
   margin-top: -12px;
   padding-top: 29px;
+  margin-right: 17px;
 
   
 }
-.entrée1  .check{
-    transform: translateX(0);
+  .check{
+    
     flex: 0;
     overflow: hidden;
     text-align: center;
@@ -38,29 +47,39 @@
     background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  
 }
+
 
 :hover .prix  +.check {
   animation: progress-check 0.4s ;
+
+
   
   
 }
 @keyframes progress-check{
   0%{
     transform: translateX(100%);
+   
     
   }
   25%{
-    transform: translateX(75%);
+    transform: translateX(75%) ;
+   
+   
   }
   50%{
-    transform: translateX(50%);
+    transform: translateX(50%) ;
+    
+    
   }
   75%{
-    transform: translateX(25%);
+    transform: translateX(25%) ;
   }
   100%{
-    transform: translateX(0);
+    transform: translateX(0) ;
+    
   }
 }
 :hover .proposition +.prix{
@@ -91,95 +110,107 @@
   .check i{
     margin-right: 14px;
   }
-/*ANIMATION*/
+  :hover .prix + .check i {
+    animation: progress-i 0.5s;
+   
+  }
+  
+    
+  
+  
+  
+  @keyframes progress-i {
+    0% {
+      transform: scaleX(0) rotate(0deg);
+    }
+    17% {
+      transform: scaleX(0.18) rotate(20deg);
+    }
+    24% {
+      transform: scaleX(0.2) rotate(30deg);
+    }
+    46% {
+      transform: scaleX(0.4) rotate(40deg);
+    }
+    100% {
+      transform: scaleX(1) rotate(360deg);
+    }
+  }
 
-.entrée1{
-  
-  
-  animation: progress-menu 1.5s ;
-  
+
+
+/*ANIMATION*/
+.entrée1 {
+  animation: progress-menu 1.5s;
 }
-.entrée2{
+
+.entrée2 {
   animation: progress-menu 1.5s 150ms;
 }
-.entrée3{
+
+.entrée3 {
   animation: progress-menu 1.5s 300ms;
 }
-.plat1{
+
+.plat1 {
   animation: progress-menu 1.5s 450ms;
 }
-.plat2{
+
+.plat2 {
   animation: progress-menu 1.5s 600ms;
 }
-.plat3{
+
+.plat3 {
   animation: progress-menu 1.5s 750ms;
 }
-.dessert1{
+
+.dessert1 {
   animation: progress-menu 1.5s 900ms;
 }
-.dessert2{
+
+.dessert2 {
   animation: progress-menu 1.5s 1050ms;
 }
-.dessert3{
+
+.dessert3 {
   animation: progress-menu 1.5s 1200ms;
 }
-@keyframes progress-menu{
-  0%{
-   transform:translateY(10px) ;
+
+@keyframes progress-menu {
+  0% {
+    transform: translateY(10px);
     opacity: 0;
   }
-  100%{
-   transform: translateY(0);
-  }
-}
-:hover .prix + .check i {
-  animation: progress-i 0.5s;
- 
-}
-
-
-
-
-
-@keyframes progress-i{
-  
-    0% {
-      transform: scaleX(0)rotate(0deg);
-  }
-  17% {
-      transform: scaleX(.18)rotate(20deg);
-  }
-  24% {
-      transform: scaleX(.2)rotate(30deg);
-  }
-  46% {
-      transform: scaleX(.4)rotate(40deg);
-  }
   100% {
-      transform: scaleX(1)rotate(360deg);
+    transform: translateY(0);
   }
+
 }
 
 
 
-
-
-.fa-check-circle{
+.fa-check-circle {
   margin-left: 15px;
   margin-top: 18px;
   font-size: 1.5em;
   background: #99e2d0;
   border-radius: 100%;
   color: white;
-  
 }
 
-.entrée1,.entrée2,.entrée3,.plat1,.plat2,.plat3,.dessert1,.dessert2,.dessert3 {
-  
-  position: relative;
+.entrée1,
+.entrée2,
+.entrée3,
+.plat1,
+.plat2,
+.plat3,
+.dessert1,
+.dessert2,
+.dessert3 {
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
-  }
-
+}
 
 
 body {
@@ -190,7 +221,7 @@ body {
 .titre {
   width: max-content;
   margin: auto;
-  font-family: "shrikhandregular";
+  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
   position: relative;
   margin-top: -18px;
 }
@@ -207,13 +238,17 @@ body {
 img {
   width: 100%;
   margin-top: -9px;
+  height: 250.02px;
+  object-fit: cover;
 }
 
 .fa-heart-o {
   position: absolute;
   right: 25px;
   top: 10px;
+  font-size: 24px;
 }
+
 .fa-heart {
   position: absolute;
   right: 25px;
@@ -227,10 +262,7 @@ img {
   cursor: pointer;
   font-size: 24px;
   color: #9356dc;
-
 }
-
-
 
 section {
   background: violet;
@@ -245,19 +277,13 @@ section {
 
 .menu {
   margin-left: 15px;
-  font-family: "robotoregular";
+  font-family: "robotoregular",Arial, Helvetica, sans-serif;
   font: menu;
   position: relative;
 }
 
-span {
-  
-  position: absolute;
-  right: 20px;
-}
-
-.titre2 {
-  font-family: "shrikhandregular";
+.type {
+  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
 }
 
 .entrée1,
@@ -319,7 +345,7 @@ h4 {
   padding-left: 33px;
   padding-right: 33px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
-  font-family: "robotoregular";
+  font-family: "robotoregular",Arial, Helvetica, sans-serif;
   font-size: small;
   border-radius: 20px;
   box-shadow: 0px 4px #edebeb;
@@ -351,7 +377,7 @@ h4 {
 footer {
   background: #3e3c3c;
   height: 200px;
-  font-family: "robotoregular";
+  font-family: "robotoregular",Arial, Helvetica, sans-serif;
   padding-top: 7px;
 }
 
@@ -379,7 +405,7 @@ footer a {
 }
 
 footer h3 {
-  font-family: "shrikhandregular";
+  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
@@ -388,9 +414,9 @@ footer h3 {
 
 @media (min-width: 768px) {
   #entrées,
-#plats,
-#desserts,
-.commander {
+  #plats,
+  #desserts,
+  .commander {
     font-size: x-large;
   }
 
@@ -408,7 +434,9 @@ footer h3 {
     top: 10px;
     opacity: 0;
     color: #9356dc;
-    
+  }
+  .fa-heart-o {
+    font-size: 32px;
   }
 
   :hover.fa-heart {
@@ -427,7 +455,7 @@ footer h3 {
     margin: 0 50px 0 50px;
   }
 
-  #section {
+  #sous_menu {
     display: flex;
     justify-content: space-around;
   }
@@ -436,28 +464,18 @@ footer h3 {
     margin-top: -353px;
   }
 
-  span {
-    margin-right: 24px;
-  }
+ 
 
   #entrées,
-#plats,
-#desserts {
-    position: relative;
+  #plats,
+  #desserts {
+    width: 30%;
     font-size: large;
-    padding-right: 125px;
   }
 
-  .plat1,
-.plat2,
-.plat3,
-.entrée1,
-.entrée2,
-.entrée3,
-.dessert1,
-.dessert2,
-.dessert3 {
-    padding-right: 81px;
+  img {
+    height: 1050px;
+    object-fit: cover;
   }
 
   .commander {
@@ -478,13 +496,10 @@ footer h3 {
     opacity: 4;
     cursor: pointer;
     font-size: 32px;
+    color: #9356dc;
   }
 
   :hover.fa-heart-o {
     cursor: pointer;
   }
-
-
 }
-
-/*# sourceMappingURL=animation.css.map */

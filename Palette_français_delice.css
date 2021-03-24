@@ -1,131 +1,115 @@
 @charset "UTF-8";
 @font-face {
   font-family: "shrikhandregular";
-  src: url("fonts/shrikhand-regular.woff2") format("woff2"),
-    url("fonts/shrikhand-regular.woff") format("woff");
+  src: url("fonts/shrikhand-regular.woff2") format("woff2"), url("fonts/shrikhand-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "robotoregular";
   src: url("fonts/Roboto-Regular-webfont.eot");
-  src: url("fonts/Roboto-Regular-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("fonts/Roboto-Regular-webfont.woff2") format("woff2"),
-    url("fonts/Roboto-Regular-webfont.woff") format("woff"),
-    url("fonts/Roboto-Regular-webfont.ttf") format("truetype"),
-    url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+  src: url("fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Regular-webfont.woff2") format("woff2"), url("fonts/Roboto-Regular-webfont.woff") format("woff"), url("fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /*test anmation sur entrée1*/
-.entrée1 .proposition{
+.proposition {
   text-overflow: ellipsis;
   /* padding: 15px; */
   overflow: hidden;
   flex: 1;
 }
-.entrée1  .prix{
-  
+
+.prix {
   /* line-height: 66px; */
   text-align: center;
   margin-top: -12px;
   padding-top: 29px;
-
-  
+  margin-right: 17px;
 }
-.entrée1  .check{
-    transform: translateX(0);
-    flex: 0;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: -12px;
-    margin-top: -12px;
-    background: #99e2d0;
+
+.check {
+  flex: 0;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: -12px;
+  margin-top: -12px;
+  background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-
-:hover .prix  +.check {
-  animation: progress-check 0.4s ;
-  
-  
+:hover .prix + .check {
+  animation: progress-check 0.4s;
 }
-@keyframes progress-check{
-  0%{
+
+@keyframes progress-check {
+  0% {
     transform: translateX(100%);
-    
   }
-  25%{
+  25% {
     transform: translateX(75%);
   }
-  50%{
+  50% {
     transform: translateX(50%);
   }
-  75%{
+  75% {
     transform: translateX(25%);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
-:hover .proposition +.prix{
+:hover .proposition + .prix {
   animation: progress-prix 0.3s;
 }
-@keyframes progress-prix{
-  0%{
+
+@keyframes progress-prix {
+  0% {
     transform: translateX(100%);
-    
   }
-  25%{
+  25% {
     transform: translateX(75%);
   }
-  50%{
+  50% {
     transform: translateX(50%);
   }
-  75%{
+  75% {
     transform: translateX(25%);
   }
-  100%{
+  100% {
     transform: translateX(0);
   }
 }
+:hover .entrée1 .check {
+  overflow: visible;
+}
 
-:hover .entrée1 .check{
- overflow:visible;
-  }
-  .check i{
-    margin-right: 14px;
-  }
-  :hover .prix + .check i {
-    animation: progress-i 0.5s;
-   
-  }
-  
-    
-  
-  
-  
-  @keyframes progress-i {
-    0% {
-      transform: scaleX(0) rotate(0deg);
-    }
-    17% {
-      transform: scaleX(0.18) rotate(20deg);
-    }
-    24% {
-      transform: scaleX(0.2) rotate(30deg);
-    }
-    46% {
-      transform: scaleX(0.4) rotate(40deg);
-    }
-    100% {
-      transform: scaleX(1) rotate(360deg);
-    }
-  }
+.check i {
+  margin-right: 14px;
+}
 
+:hover .prix + .check i {
+  animation: progress-i 0.5s;
+}
 
+@keyframes progress-i {
+  0% {
+    transform: scaleX(0) rotate(0deg);
+  }
+  17% {
+    transform: scaleX(0.18) rotate(20deg);
+  }
+  24% {
+    transform: scaleX(0.2) rotate(30deg);
+  }
+  46% {
+    transform: scaleX(0.4) rotate(40deg);
+  }
+  100% {
+    transform: scaleX(1) rotate(360deg);
+  }
+}
 /*ANIMATION*/
 .entrée1 {
   animation: progress-menu 1.5s;
@@ -171,11 +155,7 @@
   100% {
     transform: translateY(0);
   }
-
 }
-
-
-
 .fa-check-circle {
   margin-left: 15px;
   margin-top: 18px;
@@ -198,10 +178,6 @@
   justify-content: space-between;
   cursor: pointer;
 }
-.prix {
-  margin-top: 18px;
-  margin-right: 17px;
-}
 
 body {
   width: 100%;
@@ -211,7 +187,7 @@ body {
 .titre {
   width: max-content;
   margin: auto;
-  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
   position: relative;
   margin-top: -18px;
 }
@@ -267,13 +243,13 @@ section {
 
 .menu {
   margin-left: 15px;
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   font: menu;
   position: relative;
 }
 
 .type {
-  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
 }
 
 .entrée1,
@@ -335,7 +311,7 @@ h4 {
   padding-left: 33px;
   padding-right: 33px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   font-size: small;
   border-radius: 20px;
   box-shadow: 0px 4px #edebeb;
@@ -367,7 +343,7 @@ h4 {
 footer {
   background: #3e3c3c;
   height: 200px;
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   padding-top: 7px;
 }
 
@@ -395,7 +371,7 @@ footer a {
 }
 
 footer h3 {
-  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
@@ -404,9 +380,9 @@ footer h3 {
 
 @media (min-width: 768px) {
   #entrées,
-  #plats,
-  #desserts,
-  .commander {
+#plats,
+#desserts,
+.commander {
     font-size: x-large;
   }
 
@@ -425,6 +401,7 @@ footer h3 {
     opacity: 0;
     color: #9356dc;
   }
+
   .fa-heart-o {
     font-size: 32px;
   }
@@ -454,11 +431,9 @@ footer h3 {
     margin-top: -353px;
   }
 
- 
-
   #entrées,
-  #plats,
-  #desserts {
+#plats,
+#desserts {
     width: 30%;
     font-size: large;
   }
@@ -493,6 +468,5 @@ footer h3 {
     cursor: pointer;
   }
 }
-/*# sourceMappingURL=animation.css.map */
 
 /*# sourceMappingURL=Palette_fran%C3%A7ais_delice.css.map */
