@@ -85,6 +85,10 @@
   overflow: visible;
 }
 
+:hover .entrée2 .check {
+  overflow: visible;
+}
+
 .check i {
   margin-right: 14px;
 }
