@@ -29,6 +29,8 @@
 }
 
 .check {
+  transform: translate(0);
+  transform-origin: 100% 0%;
   flex: 0;
   overflow: hidden;
   text-align: center;
@@ -39,28 +41,28 @@
   border-bottom-right-radius: 15px;
 }
 
-.prix:hover + .check {
+.entrée1:hover .check {
   animation: progress-check 0.4s;
 }
 
 @keyframes progress-check {
   0% {
-    transform: translateX(100%);
+    transform: scaleX(0);
   }
   25% {
-    transform: translateX(75%);
+    transform: scaleX(0.2);
   }
   50% {
-    transform: translateX(50%);
+    transform: scaleX(0.5);
   }
   75% {
-    transform: translateX(25%);
+    transform: scaleX(0.8);
   }
   100% {
-    transform: translateX(0);
+    transform: scaleX(1);
   }
 }
-.proposition:hover + .prix {
+.entrée1:hover .prix {
   animation: progress-prix 0.3s;
 }
 
@@ -93,7 +95,7 @@
   margin-right: 14px;
 }
 
-.prix:hover + .check i {
+.entrée1:hover .check i {
   animation: progress-i 0.5s;
 }
 
