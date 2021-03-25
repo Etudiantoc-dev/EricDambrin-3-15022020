@@ -19,13 +19,13 @@
   font-style: normal;
 }
 
-
 /*test anmation sur entrée1*/
 .proposition {
   text-overflow: ellipsis;
   /* padding: 15px; */
   overflow: hidden;
   flex: 1;
+  
 }
 
 .prix {
@@ -39,7 +39,6 @@
 }
 
 .check {
- 
   transform: scaleX(0);
   transform-origin: 100% 0%;
   transition: transform 0.4s ease-in-out;
@@ -50,43 +49,68 @@
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
- 
 }
 .check i {
   margin-right: 14px;
 }
-
-.entrée1:hover .check,.entrée2:hover .check {
+.proposition:hover {
+  text-overflow: ellipsis;
+  width: 80%;
   
+  flex-wrap: nowrap;
+}
+
+.entrée1:hover .check,
+.entrée2:hover .check,
+.entrée3:hover .check,
+.plat1:hover .check,
+.plat2:hover .check,
+.plat3:hover .check,
+.dessert1:hover .check,
+.dessert2:hover .check,
+.dessert3:hover .check {
   transform: scaleX(1);
 }
-.entrée1:hover .prix,.entrée2:hover .prix {
-  
+.entrée1:hover .prix,
+.entrée2:hover .prix,
+.entrée3:hover .prix,
+.plat1:hover .prix,
+.plat2:hover .prix,
+.plat3:hover .prix,
+.dessert1:hover .prix,
+.dessert2:hover .prix,
+.dessert3:hover .prix {
   transform: translateX(-100%);
 }
 
-.entrée1:hover .check i,.entrée2:hover .check i {
+.entrée1:hover .check i,
+.entrée2:hover .check i,
+.entrée3:hover .check i,
+.plat1:hover .check i,
+.plat2:hover .check i,
+.plat3:hover .check i,
+.dessert1:hover .check i,
+.dessert2:hover .check i,
+.dessert3:hover .check i {
   animation: progress-i 0.5s;
 }
 @keyframes progress-i {
-    0% {
-      transform: scaleX(0) rotate(0deg);
-    }
-    17% {
-      transform: scaleX(0.18) rotate(20deg);
-    }
-    24% {
-      transform: scaleX(0.2) rotate(30deg);
-    }
-    46% {
-      transform: scaleX(0.4) rotate(40deg);
-    }
-    100% {
-      transform: scaleX(1) rotate(360deg);
-    }
+  0% {
+    transform: scaleX(0) rotate(0deg);
   }
-
-
+  17% {
+    transform: scaleX(0.18) rotate(20deg);
+  }
+  24% {
+    transform: scaleX(0.2) rotate(30deg);
+  }
+  46% {
+    transform: scaleX(0.4) rotate(40deg);
+  }
+  100% {
+    transform: scaleX(1) rotate(360deg);
+  }
+}
 
 /*ANIMATION*/
 .entrée1 {
@@ -133,10 +157,7 @@
   100% {
     transform: translateY(0);
   }
-
 }
-
-
 
 .fa-check-circle {
   margin-left: 15px;
@@ -161,7 +182,6 @@
   cursor: pointer;
 }
 
-
 body {
   width: 100%;
   margin: auto;
@@ -170,7 +190,7 @@ body {
 .titre {
   width: max-content;
   margin: auto;
-  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
   position: relative;
   margin-top: -18px;
 }
@@ -226,13 +246,13 @@ section {
 
 .menu {
   margin-left: 15px;
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   font: menu;
   position: relative;
 }
 
 .type {
-  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
 }
 
 .entrée1,
@@ -294,7 +314,7 @@ h4 {
   padding-left: 33px;
   padding-right: 33px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   font-size: small;
   border-radius: 20px;
   box-shadow: 0px 4px #edebeb;
@@ -326,7 +346,7 @@ h4 {
 footer {
   background: #3e3c3c;
   height: 200px;
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   padding-top: 7px;
 }
 
@@ -354,7 +374,7 @@ footer a {
 }
 
 footer h3 {
-  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
@@ -412,8 +432,6 @@ footer h3 {
   section {
     margin-top: -353px;
   }
-
- 
 
   #entrées,
   #plats,

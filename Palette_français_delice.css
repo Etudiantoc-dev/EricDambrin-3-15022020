@@ -47,15 +47,45 @@
   margin-right: 14px;
 }
 
-.entrée1:hover .check, .entrée2:hover .check {
+.proposition:hover {
+  text-overflow: ellipsis;
+  width: 80%;
+  flex-wrap: nowrap;
+}
+
+.entrée1:hover .check,
+.entrée2:hover .check,
+.entrée3:hover .check,
+.plat1:hover .check,
+.plat2:hover .check,
+.plat3:hover .check,
+.dessert1:hover .check,
+.dessert2:hover .check,
+.dessert3:hover .check {
   transform: scaleX(1);
 }
 
-.entrée1:hover .prix, .entrée2:hover .prix {
+.entrée1:hover .prix,
+.entrée2:hover .prix,
+.entrée3:hover .prix,
+.plat1:hover .prix,
+.plat2:hover .prix,
+.plat3:hover .prix,
+.dessert1:hover .prix,
+.dessert2:hover .prix,
+.dessert3:hover .prix {
   transform: translateX(-100%);
 }
 
-.entrée1:hover .check i, .entrée2:hover .check i {
+.entrée1:hover .check i,
+.entrée2:hover .check i,
+.entrée3:hover .check i,
+.plat1:hover .check i,
+.plat2:hover .check i,
+.plat3:hover .check i,
+.dessert1:hover .check i,
+.dessert2:hover .check i,
+.dessert3:hover .check i {
   animation: progress-i 0.5s;
 }
 
