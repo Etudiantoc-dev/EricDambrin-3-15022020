@@ -29,7 +29,7 @@
 }
 
 .check {
-  transform: translate(0);
+  
   transform-origin: 100% 0%;
   flex: 0;
   overflow: hidden;
