@@ -426,6 +426,9 @@ footer h3 {
   section {
     margin-top: -353px;
   }
+  h2{
+    margin-left: 15px;
+  }
 
   #entrées,
 #plats,
