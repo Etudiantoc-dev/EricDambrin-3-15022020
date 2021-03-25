@@ -21,108 +21,54 @@
 
 
 /*test anmation sur entrée1*/
- .proposition{
+.proposition {
   text-overflow: ellipsis;
   /* padding: 15px; */
   overflow: hidden;
   flex: 1;
 }
- .prix{
-  
+
+.prix {
   /* line-height: 66px; */
   text-align: center;
   margin-top: -12px;
   padding-top: 29px;
-  margin-right: 17px;
-
-  
+  margin-right: -25px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
 }
-  .check{
-    
-    flex: 0;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: -12px;
-    margin-top: -12px;
-    background: #99e2d0;
+
+.check {
+ 
+  transform: scaleX(0);
+  transform-origin: 100% 0%;
+  transition: transform 0.4s ease-in-out;
+  flex: 0;
+  text-align: center;
+  margin-bottom: -12px;
+  margin-top: -12px;
+  background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  
+ 
+}
+.check i {
+  margin-right: 14px;
 }
 
-
-.prix:hover   +.check {
-  animation: progress-check 0.4s ;
-
-
+.entrée1:hover .check,.entrée2:hover .check {
   
+  transform: scaleX(1);
+}
+.entrée1:hover .prix,.entrée2:hover .prix {
   
-}
-@keyframes progress-check{
-  0%{
-    transform: translateX(100%);
-   
-    
-  }
-  25%{
-    transform: translateX(75%) ;
-   
-   
-  }
-  50%{
-    transform: translateX(50%) ;
-    
-    
-  }
-  75%{
-    transform: translateX(25%) ;
-  }
-  100%{
-    transform: translateX(0) ;
-    
-  }
-}
-.proposition:hover  +.prix{
-  animation: progress-prix 0.3s;
-}
-@keyframes progress-prix{
-  0%{
-    transform: translateX(100%);
-    
-  }
-  25%{
-    transform: translateX(75%);
-  }
-  50%{
-    transform: translateX(50%);
-  }
-  75%{
-    transform: translateX(25%);
-  }
-  100%{
-    transform: translateX(0);
-  }
+  transform: translateX(-100%);
 }
 
-.entrée1:hover  .check{
- overflow:visible;
-  }
-  .entrée2:hover  .check{
-    overflow:visible;
-     }
-  .check i{
-    margin-right: 14px;
-  }
-  .prix:hover  + .check i {
-    animation: progress-i 0.5s;
-   
-  }
-  
-    
-  
-  
-  
-  @keyframes progress-i {
+.entrée1:hover .check i,.entrée2:hover .check i {
+  animation: progress-i 0.5s;
+}
+@keyframes progress-i {
     0% {
       transform: scaleX(0) rotate(0deg);
     }

@@ -25,14 +25,16 @@
   text-align: center;
   margin-top: -12px;
   padding-top: 29px;
-  margin-right: 17px;
+  margin-right: -25px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
 .check {
- 
+  transform: scaleX(0);
   transform-origin: 100% 0%;
+  transition: transform 0.4s ease-in-out;
   flex: 0;
-  overflow: hidden;
   text-align: center;
   margin-bottom: -12px;
   margin-top: -12px;
@@ -41,57 +43,19 @@
   border-bottom-right-radius: 15px;
 }
 
-.entrée1:hover .check {
-  animation: progress-check 0.4s;
-  overflow: visible;
-}
-
-@keyframes progress-check {
-  0% {
-    transform: scaleX(0);
-  }
-  25% {
-    transform: scaleX(0.2);
-  }
-  50% {
-    transform: scaleX(0.5);
-  }
-  75% {
-    transform: scaleX(0.8);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-.entrée1:hover .prix {
-  animation: progress-prix 0.3s;
-}
-
-@keyframes progress-prix {
-  0% {
-    
-    transform: translateX(100%);
-  }
-  17% {
-    transform: translateX(80%);
-  }
-  24% {
-    transform: translateX(40%);
-  }
-  46% {
-    transform: translateX(20%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-
 .check i {
   margin-right: 14px;
 }
 
-.entrée1:hover .check i {
+.entrée1:hover .check, .entrée2:hover .check {
+  transform: scaleX(1);
+}
+
+.entrée1:hover .prix, .entrée2:hover .prix {
+  transform: translateX(-100%);
+}
+
+.entrée1:hover .check i, .entrée2:hover .check i {
   animation: progress-i 0.5s;
 }
 
