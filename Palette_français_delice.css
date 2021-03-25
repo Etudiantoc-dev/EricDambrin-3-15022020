@@ -29,7 +29,7 @@
 }
 
 .check {
-  
+ 
   transform-origin: 100% 0%;
   flex: 0;
   overflow: hidden;
@@ -43,6 +43,7 @@
 
 .entrée1:hover .check {
   animation: progress-check 0.4s;
+  overflow: visible;
 }
 
 @keyframes progress-check {
@@ -68,28 +69,23 @@
 
 @keyframes progress-prix {
   0% {
+    
     transform: translateX(100%);
   }
-  25% {
-    transform: translateX(75%);
+  17% {
+    transform: translateX(80%);
   }
-  50% {
-    transform: translateX(50%);
+  24% {
+    transform: translateX(40%);
   }
-  75% {
-    transform: translateX(25%);
+  46% {
+    transform: translateX(20%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
 }
-.entrée1:hover .check {
-  overflow: visible;
-}
 
-.entrée2:hover .check {
-  overflow: visible;
-}
 
 .check i {
   margin-right: 14px;
