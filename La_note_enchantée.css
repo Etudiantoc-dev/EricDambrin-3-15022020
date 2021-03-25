@@ -12,56 +12,83 @@
   font-weight: normal;
   font-style: normal;
 }
-/*ANIMATION*/
-.entrée1 {
-  animation: progress-menu 1.5s;
+/*test anmation sur entrée1*/
+.proposition {
+  text-overflow: ellipsis;
+  /* padding: 15px; */
+  overflow: hidden;
+  flex: 1;
 }
 
-.entrée2 {
-  animation: progress-menu 1.5s 150ms;
+.prix {
+  /* line-height: 66px; */
+  text-align: center;
+  margin-top: -12px;
+  padding-top: 29px;
+  margin-right: -25px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
 }
 
-.entrée3 {
-  animation: progress-menu 1.5s 300ms;
+.check {
+  transform: scaleX(0);
+  transform-origin: 100% 0%;
+  transition: transform 0.4s ease-in-out;
+  flex: 0;
+  text-align: center;
+  margin-bottom: -12px;
+  margin-top: -12px;
+  background: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
-.plat1 {
-  animation: progress-menu 1.5s 450ms;
+.check i {
+  margin-right: 14px;
 }
 
-.plat2 {
-  animation: progress-menu 1.5s 600ms;
+.proposition:hover {
+  text-overflow: ellipsis;
+  width: 80%;
+  flex-wrap: nowrap;
 }
 
-.plat3 {
-  animation: progress-menu 1.5s 750ms;
-}
-
-.dessert1 {
-  animation: progress-menu 1.5s 900ms;
-}
-
-.dessert2 {
-  animation: progress-menu 1.5s 1050ms;
-}
-
-.dessert3 {
-  animation: progress-menu 1.5s 1200ms;
-}
-
-@keyframes progress-menu {
-  0% {
-    transform: translateY(10px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.proposition:hover + .check {
+.entrée1:hover .check,
+.entrée2:hover .check,
+.entrée3:hover .check,
+.entrée4:hover .check,
+.plat1:hover .check,
+.plat2:hover .check,
+.plat3:hover .check,
+.dessert1:hover .check,
+.dessert2:hover .check,
+.dessert3:hover .check {
   transform: scaleX(1);
 }
-.proposition:hover + .check i {
+
+.entrée1:hover .prix,
+.entrée2:hover .prix,
+.entrée3:hover .prix,
+.entrée4:hover .prix,
+.plat1:hover .prix,
+.plat2:hover .prix,
+.plat3:hover .prix,
+.dessert1:hover .prix,
+.dessert2:hover .prix,
+.dessert3:hover .prix {
+  transform: translateX(-100%);
+}
+
+.entrée1:hover .check i,
+.entrée2:hover .check i,
+.entrée3:hover .check i,
+.entrée4:hover .check i,
+.plat1:hover .check i,
+.plat2:hover .check i,
+.plat3:hover .check i,
+.dessert1:hover .check i,
+.dessert2:hover .check i,
+.dessert3:hover .check i {
   animation: progress-i 0.5s;
 }
 
@@ -82,20 +109,55 @@
     transform: scaleX(1) rotate(360deg);
   }
 }
-.check {
-  transform: scaleX(0);
-  transform-origin: 100% 0%;
-  transition: transform 0.4s ease-in-out;
-  position: absolute;
-  right: 0%;
-  bottom: 0%;
-  background: #99e2d0;
-  width: 13%;
-  height: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+/*ANIMATION*/
+.entrée1 {
+  animation: progress-menu 1.5s;
 }
 
+.entrée2 {
+  animation: progress-menu 1.5s 150ms;
+}
+
+.entrée3 {
+  animation: progress-menu 1.5s 300ms;
+}
+.entrée4{
+  animation: progress-menu 1.5s 450ms;
+}
+
+.plat1 {
+  animation: progress-menu 1.5s 600ms;
+}
+
+.plat2 {
+  animation: progress-menu 1.5s 750ms;
+}
+
+.plat3 {
+  animation: progress-menu 1.5s 900ms;
+}
+
+.dessert1 {
+  animation: progress-menu 1.5s 1050ms;
+}
+
+.dessert2 {
+  animation: progress-menu 1.5s 1200ms;
+}
+
+.dessert3 {
+  animation: progress-menu 1.5s 1350ms;
+}
+
+@keyframes progress-menu {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .fa-check-circle {
   margin-left: 15px;
   margin-top: 18px;
@@ -105,8 +167,18 @@
   color: white;
 }
 
-.entrée1, .entrée2, .entrée3,.entrée4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
-  position: relative;
+.entrée1,
+.entrée2,
+.entrée3,
+.entrée4,
+.plat1,
+.plat2,
+.plat3,
+.dessert1,
+.dessert2,
+.dessert3 {
+  display: flex;
+  justify-content: space-between;
   cursor: pointer;
 }
 
@@ -118,7 +190,7 @@ body {
 .titre {
   width: max-content;
   margin: auto;
-  font-family: "shrikhandregular";
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
   position: relative;
   margin-top: -18px;
 }
@@ -174,24 +246,18 @@ section {
 
 .menu {
   margin-left: 15px;
-  font-family: "robotoregular";
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   font: menu;
   position: relative;
 }
 
-span {
-  position: absolute;
-  right: 20px;
-}
-
 .type {
-  font-family: "shrikhandregular";
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
 }
 
 .entrée1,
 .entrée2,
-.entrée3,
-.entrée4 {
+.entrée3,.entrée4 {
   margin-top: 10px;
   background: white;
   width: 98%;
@@ -248,7 +314,7 @@ h4 {
   padding-left: 33px;
   padding-right: 33px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
-  font-family: "robotoregular";
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   font-size: small;
   border-radius: 20px;
   box-shadow: 0px 4px #edebeb;
@@ -265,7 +331,6 @@ h4 {
   top: 10px;
   opacity: 0;
   color: #9356dc;
-  font-size: 24px;
 }
 
 :hover.fa-heart {
@@ -281,7 +346,7 @@ h4 {
 footer {
   background: #3e3c3c;
   height: 200px;
-  font-family: "robotoregular";
+  font-family: "robotoregular", Arial, Helvetica, sans-serif;
   padding-top: 7px;
 }
 
@@ -309,7 +374,7 @@ footer a {
 }
 
 footer h3 {
-  font-family: "shrikhandregular";
+  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
@@ -339,7 +404,8 @@ footer h3 {
     opacity: 0;
     color: #9356dc;
   }
-  .fa-heart-o{
+
+  .fa-heart-o {
     font-size: 32px;
   }
 
@@ -358,10 +424,6 @@ footer h3 {
     width: auto;
     margin: 0 50px 0 50px;
   }
-  img{
-    height: 1050px;
-    object-fit: cover;
-  }
 
   #sous_menu {
     display: flex;
@@ -372,29 +434,16 @@ footer h3 {
     margin-top: -353px;
   }
 
-  span {
-    margin-right: 24px;
-  }
-
   #entrées,
 #plats,
 #desserts {
-    position: relative;
+    width: 30%;
     font-size: large;
-    padding-right: 125px;
   }
 
-  .plat1,
-.plat2,
-.plat3,
-.entrée1,
-.entrée2,
-.entrée3,
-.entrée4,
-.dessert1,
-.dessert2,
-.dessert3 {
-    padding-right: 81px;
+  img {
+    height: 1050px;
+    object-fit: cover;
   }
 
   .commander {
@@ -422,6 +471,5 @@ footer h3 {
     cursor: pointer;
   }
 }
-/*# sourceMappingURL=animation.css.map */
 
 /*# sourceMappingURL=Palette_fran%C3%A7ais_delice.css.map */
