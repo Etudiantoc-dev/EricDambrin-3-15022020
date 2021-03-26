@@ -24,19 +24,18 @@
 
 
 .prix {
-  
+  flex: 0;
   text-align: center;
   margin-top: -12px;
   padding-top: 29px;
   margin-right: -25px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-in-out;
+  transition:flex 0.8s;
 }
 
 .check {
   transform: scaleX(0);
   transform-origin: 100% 0%;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.5s linear;
   flex: 0;
   text-align: center;
   margin-bottom: -12px;
@@ -74,8 +73,9 @@
 .dessert1:hover .prix,
 .dessert2:hover .prix,
 .dessert3:hover .prix {
-  flex: 6;
-  transition:flex-grow 3s linear;
+  flex: 0.5;
+  transition:flex-grow 0.4s linear ;
+  
 }
 
 .entrée1:hover .check i,
