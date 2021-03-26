@@ -141,15 +141,7 @@
   color: white;
 }
 
-.entrée1,
-.entrée2,
-.entrée3,
-.plat1,
-.plat2,
-.plat3,
-.dessert1,
-.dessert2,
-.dessert3 {
+.plat {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -228,9 +220,7 @@ section {
   font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
 }
 
-.entrée1,
-.entrée2,
-.entrée3 {
+.plat {
   margin-top: 10px;
   background: white;
   width: 98%;
@@ -242,33 +232,7 @@ section {
   box-shadow: 2px 4px #e9e7e7;
 }
 
-.plat1,
-.plat2,
-.plat3 {
-  margin-top: 10px;
-  background: white;
-  width: 98%;
-  padding-left: 7px;
-  margin-left: -6px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 15px;
-  box-shadow: 2px 4px #e9e7e7;
-}
 
-.dessert1,
-.dessert2,
-.dessert3 {
-  margin-top: 10px;
-  background: white;
-  width: 98%;
-  padding-left: 7px;
-  margin-left: -6px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 15px;
-  box-shadow: 2px 4px #e9e7e7;
-}
 
 h4 {
   border: 3px solid #99e2d0;
@@ -355,6 +319,10 @@ footer h3 {
 }
 
 @media (min-width: 768px) {
+  .plat:hover .prix
+ {
+  flex: 0.17;
+ }
   #entrées,
 #plats,
 #desserts,
@@ -393,6 +361,10 @@ footer h3 {
   }
 }
 @media (min-width: 1440px) {
+  .plat:hover .prix
+  {
+   flex: 0.3;
+  }
   body {
     width: auto;
     margin: 0 50px 0 50px;
