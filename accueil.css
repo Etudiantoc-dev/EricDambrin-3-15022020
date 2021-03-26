@@ -139,7 +139,7 @@ p,
   padding-left: 6px;
   font-size: small;
 }
-:hover.trois {
+:hover.trois,:hover.un,:hover.deux {
   background: #eee1ff;
   cursor: pointer;
 }
