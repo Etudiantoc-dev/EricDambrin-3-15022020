@@ -205,7 +205,7 @@ span {
   color: #9356dc;
 }
 :hover.fa-heart {
-  opacity: 4;
+  opacity: 1;
   cursor: pointer;
   font-size: 24px;
 }
