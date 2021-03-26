@@ -15,13 +15,21 @@
 /*test anmation sur entrée1*/
 .proposition {
   text-overflow: ellipsis;
-  /* padding: 15px; */
   overflow: hidden;
   flex: 1;
+  white-space: nowrap;
+}
+.entrée3:hover .proposition{
+  
+  text-overflow: ellipsis;
+  
+  
 }
 
+
+
 .prix {
-  /* line-height: 66px; */
+  
   text-align: center;
   margin-top: -12px;
   padding-top: 29px;
@@ -43,15 +51,12 @@
   border-bottom-right-radius: 15px;
 }
 
+
 .check i {
   margin-right: 14px;
 }
 
-.proposition:hover {
-  text-overflow: ellipsis;
-  width: 80%;
-  flex-wrap: nowrap;
-}
+
 
 .entrée1:hover .check,
 .entrée2:hover .check,
