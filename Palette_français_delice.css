@@ -19,12 +19,7 @@
   flex: 1;
   white-space: nowrap;
 }
-.entrée3:hover .proposition{
-  
-  text-overflow: ellipsis;
-  
-  
-}
+
 
 
 
@@ -79,7 +74,8 @@
 .dessert1:hover .prix,
 .dessert2:hover .prix,
 .dessert3:hover .prix {
-  transform: translateX(-100%);
+  flex: 6;
+  transition:flex-grow 3s linear;
 }
 
 .entrée1:hover .check i,
