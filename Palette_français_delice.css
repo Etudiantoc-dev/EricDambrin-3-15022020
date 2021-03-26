@@ -363,7 +363,7 @@ footer h3 {
 @media (min-width: 1440px) {
   .plat:hover .prix
   {
-   flex: 0.3;
+   flex: 0.4;
   }
   body {
     width: auto;
