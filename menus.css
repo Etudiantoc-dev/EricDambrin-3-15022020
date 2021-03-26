@@ -191,7 +191,7 @@ img {
 }
 
 :hover.fa-heart {
-  opacity: 4;
+  opacity: 1;
   cursor: pointer;
   font-size: 24px;
   color: #9356dc;
@@ -268,7 +268,7 @@ h4 {
 }
 
 :hover.fa-heart {
-  opacity: 4;
+  opacity: 1;
   cursor: pointer;
   font-size: 24px;
 }
@@ -347,7 +347,7 @@ footer h3 {
   }
 
   :hover.fa-heart {
-    opacity: 4;
+    opacity: 1;
     cursor: pointer;
     font-size: 32px;
   }
@@ -404,7 +404,7 @@ footer h3 {
   }
 
   :hover.fa-heart {
-    opacity: 4;
+    opacity: 1;
     cursor: pointer;
     font-size: 32px;
     color: #9356dc;
