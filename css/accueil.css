@@ -30,12 +30,16 @@ body {
   width: max-content;
   margin: auto;
   font-family: "Shrikhand",Arial, Helvetica, sans-serif;
+  
+}
+h1{
+  font-size: x-large;
 }
 #quartier {
   display: flex;
   align-content: space-between;
-  width: max-content;
-  margin: auto;
+  margin-left: 20%;
+  
 }
 .texte0,
 .texte {
@@ -55,9 +59,9 @@ input:focus{
   outline: none;
 }
 .formulaire {
-  background: rgb(235, 233, 233);
+    background: rgb(229 229 229 / 85%);
   padding: 15px 0 15px 0;
-  border-top: 2px rgb(215, 212, 212) solid;
+  border-top: 3px rgb(215, 212, 212) solid;
 }
 ::placeholder {
   color: black;
@@ -75,7 +79,7 @@ input:focus{
   margin-bottom: 10px;
 }
 h3 {
-  font-family: "roboto";
+  font-family: "roboto",Arial, Helvetica, sans-serif;
   font-size: 1.4em;
 }
 
@@ -91,8 +95,9 @@ h3 {
 }
 p,
 .suite_p {
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
-  color: rgb(128, 125, 125);
+  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font: icon;
+  color: #00000075;
 }
 .lien_restaurants {
   width: max-content;
@@ -100,7 +105,7 @@ p,
   margin-top: 10px;
   padding: 12px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
-  font-family: "robotoregular";
+  font-family: "roboto",Arial, Helvetica, sans-serif;
   font-size: small;
   border-radius: 20px;
   box-shadow: 0px 4px rgb(237, 235, 235);
@@ -110,7 +115,7 @@ p,
   color: white;
 }
 .action {
-  background: rgb(244, 241, 241);
+  background: rgb(248 247 247);
   padding-bottom: 20px;
 }
 .un,
@@ -118,9 +123,8 @@ p,
 .trois {
   display: flex;
   padding: 15px 60px 15px 10px;
-  font-family: "robotoregular";
-  font-weight: bold;
-  font-size: small;
+  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font: icon;
   background: rgb(244, 241, 241);
   border-radius: 18px;
   width: 87%;
@@ -189,7 +193,7 @@ span {
   background: #99e2d0;
   padding: 3px 7px 3px 7px;
   border-radius: 2px;
-  font-family: "robotoregular";
+  font-family: "roboto",Arial, Helvetica, sans-serif;
   font-size: small;
   color: transparent;
   text-shadow: 0 0 1px #330;
@@ -219,7 +223,7 @@ span {
 
 
 .textimg {
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "roboto",Arial, Helvetica, sans-serif;
   margin-left: 10px;
   padding-bottom: 10px;
   padding-top: 5px;
@@ -239,7 +243,7 @@ span {
 footer {
   background: rgb(62, 60, 60);
   height: 200px;
-  font-family: "robotoregular",Arial, Helvetica, sans-serif;
+  font-family: "roboto",Arial, Helvetica, sans-serif;
 }
 footer li {
   list-style: none;
@@ -262,7 +266,7 @@ footer a {
 }
 
 footer h3 {
-  font-family: "shrikhandregular",Arial, Helvetica, sans-serif;
+  font-family: "shrikhand",Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
