@@ -135,7 +135,7 @@ p,
   background: #9356dc;
   border-radius: 25px;
   width: 13px;
-  height: 19px;
+  padding-top: 1px;
   padding-left: 6px;
   font-size: small;
 }
