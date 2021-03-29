@@ -17,7 +17,7 @@
     url("fonts/Roboto-Regular-webfont.woff2") format("woff2"),
     url("fonts/Roboto-Regular-webfont.woff") format("woff"),
     
-    url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+    url("fonts/Roboto-Regular-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -75,7 +75,7 @@ input:focus{
   margin-bottom: 10px;
 }
 h3 {
-  font-family: "robotoregular";
+  font-family: "roboto";
   font-size: 1.4em;
 }
 
