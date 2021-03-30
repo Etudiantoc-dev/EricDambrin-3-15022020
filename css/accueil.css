@@ -25,6 +25,9 @@ body {
   width: 100%;
   margin: auto;
 }
+header{
+  line-height: 20px;
+}
 
 .titre {
   width: max-content;
@@ -33,17 +36,18 @@ body {
   
 }
 h1{
-  font-size: x-large;
+  font-size: 1.7em;
 }
 #quartier {
   display: flex;
   align-content: space-between;
-  margin-left: 20%;
+  width: max-content;
+  margin: auto;
   
 }
 .texte0,
 .texte {
-  margin-left: 15px;
+  margin-left: 18px;
   font-size: 1em;
 }
 .logo_map {
@@ -68,7 +72,7 @@ input:focus{
   font-weight: normal;
 }
 .action h3 {
-  padding-top: 9px;
+  padding-top: 13px;
   width: max-content;
   margin: auto;
   margin-bottom: -14px;
@@ -86,7 +90,8 @@ h3 {
 .action p {
   width: max-content;
   margin: auto;
-  padding-top: 10px;
+  padding-top: 15px;
+  font-size: large;
 }
 .suite_p {
   width: max-content;
@@ -102,35 +107,48 @@ p,
 .lien_restaurants {
   width: max-content;
   margin: auto;
-  margin-top: 10px;
-  padding: 12px;
+  margin-top: 30px;
+  padding: 20px;
+  padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
   font-family: "roboto",Arial, Helvetica, sans-serif;
   font-size: small;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0px 4px rgb(237, 235, 235);
 }
 .lien_restaurants a {
   text-decoration: none;
-  color: white;
+  color: #f8f7f7;
+  font: menu;
 }
 .action {
   background: rgb(248 247 247);
-  padding-bottom: 20px;
+  padding-bottom: 58px;
+  padding-top: 20px;
+}
+.logo1{
+  font-size: large;
+  color: #00000099;
+}
+.logo{
+  color: #00000099;
 }
 .un,
 .deux,
 .trois {
   display: flex;
-  padding: 15px 60px 15px 10px;
+  padding: 23px 60px 21px 10px;
   font-family: "roboto",Arial, Helvetica, sans-serif;
   font: icon;
   background: rgb(244, 241, 241);
   border-radius: 18px;
-  width: 87%;
+  width: 96%;
   margin: auto;
   box-shadow: 2px 4px rgb(233, 231, 231);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .un__un,
@@ -138,28 +156,49 @@ p,
 .trois__trois {
   justify-content: flex-start;
   position: relative;
-  right: 17px;
+  right: 37px;
   color: white;
   background: #9356dc;
   border-radius: 25px;
   width: 13px;
-  padding-top: 1px;
-  padding-left: 6px;
+  padding-inline-start: 6px;
+  padding-block: 3px;
+  padding-inline-end: 2px;
   font-size: small;
 }
 :hover.trois,:hover.un,:hover.deux {
-  background: #eee1ff;
+  background: #eee1ff96;
   cursor: pointer;
+   
+  
+}
+:hover.trois .logo,:hover.deux .logo,:hover.un .logo1 {
+  color: #9356dc;
+}
+.logo,.logo1 {
+  position: relative;
+  left: 20px;
+}
+.un__un{
+  position: relative;
+  right:29px;
+}
+.deux__deux{
+  position: relative;
+  right:34px;
 }
 
 .fonctionnement {
-  width: 80%;
-  margin-left: 20px;
-  padding: 0 40px 10px 10px;
+  width: 76%;
+  padding: 0 56px 10px 10px;
   margin: auto;
 }
-.texte1 {
-  margin-left: 21px;
+
+.fonctionnement h3{
+  margin-left: -6px;
+}
+.texte1{
+  margin-left: 23px;
 }
 
 #restaurants {
@@ -168,7 +207,7 @@ p,
   background: rgb(244, 241, 241);
   padding-top: 4px;
   margin-top: 15px;
-  padding-bottom: 60px;
+  padding-bottom: 34px;
 }
 
 #restaurants img {
@@ -231,7 +270,7 @@ span {
 }
 
 #restaurants h3 {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .resto {
   background: white;
@@ -276,10 +315,12 @@ footer h3 {
  
   .texte,
   .texte1,
-  .logo_map,
   .logo,
   .logo1 {
     font-size: xx-large;
+  }
+  .logo_map{
+    font-size: x-large;
   }
   .suite_p {
     font-size: x-large;
@@ -290,7 +331,21 @@ footer h3 {
   .un__un,
   .deux__deux,
   .trois__trois {
-    margin-top: 8px;
+    margin-top: 18px;
+    position: relative;
+    bottom: 10px;
+  }
+  .un__un{
+    position: relative;
+    right:38px;
+  }
+  .deux__deux{
+    position: relative;
+    right:50px;
+  }
+  .trois__trois{
+    position: relative;
+    right: 56px;
   }
   .texte1 {
     margin-left: 23px;
@@ -311,10 +366,10 @@ footer h3 {
 
   footer ul {
     width: 55%;
-    font-size: 1em;
+    font-size: larger;
     list-style: none;
     margin-top: -16px;
-    /* je ne sais pas si bonne idée en flex?*/
+    
   }
   .textimg {
     font-size: x-large;
@@ -350,6 +405,21 @@ footer h3 {
   .deux__deux,
   .trois__trois {
     margin-top: 7px;
+  }
+  .un__un{
+    position: relative;
+    right:36px;
+  }
+  .deux__deux{
+    position: relative;
+    right:44px;
+  }
+  .trois__trois{
+    position: relative;
+    right: 48px;
+  }
+  .texte1,.texte1,.texte0{
+    margin-top: 17px;
   }
 
   #restos {
@@ -432,7 +502,7 @@ footer h3 {
   .deux,
   .trois {
     margin-top: 26px;
-    padding: 0px 28px 15px 13px;
+    padding: 10px 28px 15px 13px;
     margin-left: 43px;
     margin-right: 10px;
   }
@@ -445,8 +515,10 @@ footer h3 {
   .un__un,
   .deux__deux,
   .trois__trois {
-    margin-top: 20px;
+    margin-top: 16px;
+   
   }
+ 
   header {
     border: 1px solid grey;
     border-top: none;
@@ -461,3 +533,4 @@ footer h3 {
     margin-top: -15px;
   }
 }
+
