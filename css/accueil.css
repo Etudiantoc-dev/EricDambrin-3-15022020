@@ -230,12 +230,13 @@ span {
   top: 11px;
   z-index: 1;
   background: #99e2d0;
-  padding: 3px 7px 3px 7px;
+  padding: 6px 11px 6px 11px;
   border-radius: 2px;
   font-family: "roboto",Arial, Helvetica, sans-serif;
   font-size: small;
-  color: transparent;
-  text-shadow: 0 0 1px #330;
+  font-size: smaller;
+  color: #36673da3;
+  font-weight: 700;
 }
 .fa-heart-o {
  
@@ -418,9 +419,7 @@ footer h3 {
     position: relative;
     right: 48px;
   }
-  .texte1,.texte1,.texte0{
-    margin-top: 17px;
-  }
+ 
 
   #restos {
     display: flex;
