@@ -244,6 +244,7 @@ span {
   right: 25px;
   top: 10px;
   font-size: 24px;
+  color: #0000007a;
 }
 .fa-heart {
   position: absolute;
@@ -284,6 +285,7 @@ footer {
   background: rgb(62, 60, 60);
   height: 200px;
   font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 footer li {
   list-style: none;
@@ -298,11 +300,13 @@ footer a {
   position: relative;
   right: 20px;
   font-size: 0.8em;
+  margin-top: 9px;
 }
 footer a {
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: initial;
   margin-left: 3px;
+  font-weight: 500;
 }
 
 footer h3 {
@@ -311,6 +315,11 @@ footer h3 {
   margin-left: 20px;
   margin-top: 0%;
   width: max-content;
+  font-size: initial;
+  font-weight: 100;
+}
+footer ul{
+  line-height: 26px;
 }
 @media screen and (min-width: 600px) and (max-width: 1150px) {
  
