@@ -163,11 +163,11 @@ p,
   color: white;
   background: #9356dc;
   border-radius: 25px;
-  width: 13px;
-  padding-inline-start: 6px;
-  padding-block: 3px;
-  padding-inline-end: 2px;
-  font-size: small;
+  width: 15px;
+  height: 19px;
+  padding-left: 5px;
+  padding-top: 2px;
+  
 }
 :hover.trois,:hover.un,:hover.deux {
   background: #eee1ff96;
