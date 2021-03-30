@@ -1,20 +1,22 @@
-@charset "UTF-8";
 @font-face {
-  font-family: "shrikhandregular";
-  src: url("fonts/shrikhand-regular.woff2") format("woff2"),
-    url("fonts/shrikhand-regular.woff") format("woff");
+  font-family: 'shrikhandregular';
+  src: url('police-regular-webfont.ttf') format('ttf'),
+       url('police-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
 }
 @font-face {
   font-family: "robotoregular";
+  
   src: url("fonts/Roboto-Regular-webfont.eot");
-  src: url("fonts/Roboto-Regular-webfont.eot?#iefix")
+  src: url("fonts/Roboto-Regular-webfont.ttf") format("ttf"),
+  url("fonts/Roboto-Regular-webfont.eot?#iefix"),
       format("embedded-opentype"),
     url("fonts/Roboto-Regular-webfont.woff2") format("woff2"),
     url("fonts/Roboto-Regular-webfont.woff") format("woff"),
-    url("fonts/Roboto-Regular-webfont.ttf") format("truetype"),
-    url("fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+    
+    url("fonts/Roboto-Regular-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -154,7 +156,7 @@ body {
 .titre {
   width: max-content;
   margin: auto;
-  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
   position: relative;
   margin-top: -18px;
 }
@@ -210,13 +212,13 @@ section {
 
 .menu {
   margin-left: 15px;
-  font-family: "robotoregular", Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font: menu;
   position: relative;
 }
 
 .type {
-  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
 }
 
 .plat {
@@ -248,7 +250,7 @@ h4 {
   padding-left: 33px;
   padding-right: 33px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
-  font-family: "robotoregular", Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font-size: small;
   border-radius: 20px;
   box-shadow: 0px 4px #edebeb;
@@ -257,6 +259,9 @@ h4 {
 .commander a {
   text-decoration: none;
   color: white;
+}
+.fa-heart-o{
+  color: #0000007a;
 }
 
 .fa-heart {
@@ -280,7 +285,7 @@ h4 {
 footer {
   background: #3e3c3c;
   height: 200px;
-  font-family: "robotoregular", Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   padding-top: 7px;
 }
 
@@ -308,7 +313,7 @@ footer a {
 }
 
 footer h3 {
-  font-family: "shrikhandregular", Arial, Helvetica, sans-serif;
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
