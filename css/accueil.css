@@ -249,6 +249,7 @@ span {
   top: 10px;
   font-size: 24px;
   color: #0000007a;
+  
 }
 .fa-heart {
   position: absolute;
@@ -256,14 +257,20 @@ span {
   top: 10px;
   opacity: 0;
   color: #9356dc;
+  transform: scale(0.5);
+  transition: transform 0.8s;
 }
 :hover.fa-heart {
   opacity: 1;
   cursor: pointer;
   font-size: 24px;
+  transform: scale(1);
+  color:#9356dc;
+  
 }
 :hover.fa-heart-o {
   cursor: pointer;
+  
 }
 
 
