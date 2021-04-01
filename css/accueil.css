@@ -410,17 +410,14 @@ footer i {
   color: white;
 }
 footer img{
-  color: white;
+  
   position: relative;
   right: 18px;
   filter: invert();
   
 }
-footer ol {
-  position: relative;
-  right: 40px;
-}
-footer ol i{
+
+footer  i{
   margin-left: 4px;
 }
 footer i,
