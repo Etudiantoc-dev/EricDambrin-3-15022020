@@ -1,34 +1,30 @@
-
 @font-face {
-  font-family: 'shrikhandregular';
-  src: url('police-regular-webfont.ttf') format('ttf'),
-       url('police-regular-webfont.woff') format('woff');
+  font-family: "shrikhandregular";
+  src: url("police-regular-webfont.ttf") format("ttf"),
+    url("police-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-
 }
 @font-face {
   font-family: "robotoregular";
-  
+
   src: url("fonts/Roboto-Regular-webfont.eot");
   src: url("fonts/Roboto-Regular-webfont.ttf") format("ttf"),
-  url("fonts/Roboto-Regular-webfont.eot?#iefix"),
-      format("embedded-opentype"),
+    url("fonts/Roboto-Regular-webfont.eot?#iefix"), format("embedded-opentype"),
     url("fonts/Roboto-Regular-webfont.woff2") format("woff2"),
     url("fonts/Roboto-Regular-webfont.woff") format("woff"),
-    
     url("fonts/Roboto-Regular-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 /*Animation loader spinner*/
-.chargement{
-  border: 10px solid  rgb(229 229 229 / 85%);
-  border-top:10px solid #16a085 ;
-  border-bottom: 10px solid #34495e ;
+.chargement {
+  border: 10px solid rgb(229 229 229 / 85%);
+  border-top: 10px solid #16a085;
+  border-bottom: 10px solid #34495e;
   border-left: 10px solid #bdc3c7;
-  border-right: 10px solid #d35400 ;
+  border-right: 10px solid #d35400;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -36,109 +32,102 @@
   /*placement loader*/
   margin: auto;
   position: absolute;
-  right: 0;left: 0;bottom: 0;top:0;
-  animation: progress-loader 2.5s ;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  animation: progress-loader 2.5s;
   opacity: 0;
-  
-  
-  
 }
-.loader{
-  opacity:0;
+.loader {
+  opacity: 0;
   position: absolute;
-  right: 0;left: 0;bottom: 50%;
+  right: 0;
+  left: 0;
+  bottom: 324px;
   margin: auto;
   width: max-content;
-  animation: progress-opacity 2.5s ;
-  
-
+  animation: progress-opacity 2.5s;
 }
-@keyframes progress-opacity{
-  0%{
-    opacity:1
-  }
-  90%{
+@keyframes progress-opacity {
+  0% {
     opacity: 1;
   }
-  100%{
+  90% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }
 
-
-@keyframes progress-loader{
-  0%{
-    transform: rotate(0)  ;
+@keyframes progress-loader {
+  0% {
+    transform: rotate(0);
     z-index: 1;
     opacity: 1;
   }
-  20%{
-    transform:rotate(50deg);
-    opacity:1;
+  20% {
+    transform: rotate(50deg);
+    opacity: 1;
   }
-  35%{
+  35% {
     transform: rotate(110deg);
-    opacity:1;
+    opacity: 1;
   }
-  50%{
+  50% {
     transform: rotate(140deg);
-    opacity:1;
+    opacity: 1;
   }
-  60%{
+  60% {
     transform: rotate(230deg);
-    opacity:1;
+    opacity: 1;
   }
-  80%{
+  80% {
     transform: rotate(300deg);
-    opacity:1;
+    opacity: 1;
   }
-  90%{
+  90% {
     transform: rotate(340deg);
   }
-  
-  100%{
-    transform: rotate(360deg);
-    
 
+  100% {
+    transform: rotate(360deg);
   }
 }
-@keyframes progress-page{
-  0%{
+@keyframes progress-page {
+  0% {
     transform: translateY(100%);
     opacity: 0;
   }
-  99%{
+  99% {
     transform: translateY(100%);
     opacity: 0;
   }
-  100%{
+  100% {
     transform: translateY(0%);
     opacity: 1;
   }
 }
- #bloc_page{
+#bloc_page {
   animation: progress-page 2.5s;
 }
 body {
   width: 100%;
   margin: auto;
- 
-  }
-  
+}
 
-header{
+header {
   line-height: 20px;
   animation: progress-page 2.5s;
-  
 }
 
 .titre {
   width: max-content;
   margin: auto;
-  font-family: "Shrikhand",Arial, Helvetica, sans-serif;
-  
+  font-family: "Shrikhand", Arial, Helvetica, sans-serif;
 }
-h1{
+h1 {
   font-size: 1.7em;
 }
 #quartier {
@@ -146,9 +135,8 @@ h1{
   align-content: space-between;
   width: max-content;
   margin: auto;
-  
 }
-.texte0{
+.texte0 {
   margin-left: 10px;
 }
 .texte0,
@@ -164,12 +152,12 @@ input {
   border: none;
   background: none;
 }
-input:focus{
+input:focus {
   border: none;
   outline: none;
 }
 .formulaire {
-    background: rgb(229 229 229 / 85%);
+  background: rgb(229 229 229 / 85%);
   padding: 15px 0 15px 0;
   border-top: 3px rgb(215, 212, 212) solid;
 }
@@ -189,7 +177,7 @@ input:focus{
   margin-bottom: 10px;
 }
 h3 {
-  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font-size: 1.4em;
 }
 
@@ -206,7 +194,7 @@ h3 {
 }
 p,
 .suite_p {
-  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font: icon;
   color: #00000075;
 }
@@ -216,11 +204,11 @@ p,
   margin-top: 30px;
   padding: 20px;
   padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   background: linear-gradient(-6deg, #9356dc, #ff79da);
-  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font-size: small;
   border-radius: 30px;
   box-shadow: 0px 4px rgb(237, 235, 235);
@@ -235,11 +223,11 @@ p,
   padding-bottom: 58px;
   padding-top: 20px;
 }
-.logo1{
+.logo1 {
   font-size: large;
   color: #00000099;
 }
-.logo{
+.logo {
   color: #00000099;
 }
 .un,
@@ -247,7 +235,7 @@ p,
 .trois {
   display: flex;
   padding: 23px 60px 21px 10px;
-  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font: icon;
   font-size: medium;
   background: rgb(244, 241, 241);
@@ -271,28 +259,30 @@ p,
   height: 19px;
   padding-left: 5px;
   padding-top: 2px;
-  
 }
-:hover.trois,:hover.un,:hover.deux {
+:hover.trois,
+:hover.un,
+:hover.deux {
   background: #eee1ff96;
   cursor: pointer;
-   
-  
 }
-:hover.trois .logo,:hover.deux .logo,:hover.un .logo1 {
+:hover.trois .logo,
+:hover.deux .logo,
+:hover.un .logo1 {
   color: #9356dc;
 }
-.logo,.logo1 {
+.logo,
+.logo1 {
   position: relative;
   left: 20px;
 }
-.un__un{
+.un__un {
   position: relative;
-  right:29px;
+  right: 29px;
 }
-.deux__deux{
+.deux__deux {
   position: relative;
-  right:34px;
+  right: 34px;
 }
 
 .fonctionnement {
@@ -301,10 +291,10 @@ p,
   margin: auto;
 }
 
-.fonctionnement h3{
+.fonctionnement h3 {
   margin-left: -6px;
 }
-.texte1{
+.texte1 {
   margin-left: 23px;
 }
 
@@ -331,7 +321,6 @@ p,
 }
 
 span {
-  
   position: absolute;
   right: 15px;
   top: 11px;
@@ -339,20 +328,18 @@ span {
   background: #99e2d0;
   padding: 6px 11px 6px 11px;
   border-radius: 2px;
-  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font-size: small;
   font-size: smaller;
   color: #36673da3;
   font-weight: 700;
 }
 .fa-heart-o {
- 
   position: absolute;
   right: 25px;
   top: 10px;
   font-size: 24px;
   color: #0000007a;
-  
 }
 .fa-heart {
   position: absolute;
@@ -368,17 +355,14 @@ span {
   cursor: pointer;
   font-size: 24px;
   transform: scale(1);
-  color:#9356dc;
-  
+  color: #9356dc;
 }
 :hover.fa-heart-o {
   cursor: pointer;
-  
 }
 
-
 .textimg {
-  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   margin-left: 10px;
   padding-bottom: 10px;
   padding-top: 5px;
@@ -398,10 +382,11 @@ span {
 footer {
   background: rgb(62, 60, 60);
   height: 200px;
-  font-family: "roboto",Arial, Helvetica, sans-serif;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
-footer li, footer ol {
+footer li,
+footer ol {
   list-style: none;
 }
 footer a,
@@ -409,15 +394,13 @@ footer h3,
 footer i {
   color: white;
 }
-footer img{
-  
+footer img {
   position: relative;
   right: 18px;
   filter: invert(1);
-  
 }
 
-footer  i{
+footer i {
   margin-left: 4px;
 }
 footer i,
@@ -434,9 +417,8 @@ footer a {
   font-weight: 500;
 }
 
-
 footer h3 {
-  font-family: "shrikhand",Arial, Helvetica, sans-serif;
+  font-family: "shrikhand", Arial, Helvetica, sans-serif;
   padding-top: 20px;
   margin-left: 20px;
   margin-top: 0%;
@@ -444,18 +426,17 @@ footer h3 {
   font-size: initial;
   font-weight: 100;
 }
-footer ul{
+footer ul {
   line-height: 26px;
 }
 @media screen and (min-width: 600px) and (max-width: 1150px) {
- 
   .texte,
   .texte1,
   .logo,
   .logo1 {
     font-size: xx-large;
   }
-  .logo_map{
+  .logo_map {
     font-size: x-large;
   }
   .suite_p {
@@ -471,15 +452,15 @@ footer ul{
     position: relative;
     bottom: 10px;
   }
-  .un__un{
+  .un__un {
     position: relative;
-    right:38px;
+    right: 38px;
   }
-  .deux__deux{
+  .deux__deux {
     position: relative;
-    right:50px;
+    right: 50px;
   }
-  .trois__trois{
+  .trois__trois {
     position: relative;
     right: 56px;
   }
@@ -505,7 +486,6 @@ footer ul{
     font-size: larger;
     list-style: none;
     margin-top: -16px;
-    
   }
   .textimg {
     font-size: x-large;
@@ -520,21 +500,17 @@ footer ul{
   }
 }
 @media (min-width: 1150px) {
- 
   #bloc_page {
-    
-    margin:0 50px 0 50px;
-    
+    margin: 0 50px 0 50px;
   }
-  #point_break_1150{
+  #point_break_1150 {
     display: flex;
   }
-  
 
   section {
     width: 50%;
   }
-  .action{
+  .action {
     padding-bottom: 32px;
   }
   .un__un,
@@ -544,19 +520,18 @@ footer ul{
     position: relative;
     bottom: 5px;
   }
-  .un__un{
+  .un__un {
     position: relative;
-    right:36px;
+    right: 36px;
   }
-  .deux__deux{
+  .deux__deux {
     position: relative;
-    right:44px;
+    right: 44px;
   }
-  .trois__trois{
+  .trois__trois {
     position: relative;
     right: 48px;
   }
- 
 
   #restos {
     display: flex;
@@ -652,21 +627,19 @@ footer ul{
   .deux__deux,
   .trois__trois {
     margin-top: 16px;
-   
   }
- 
+
   header {
     border: 1px solid grey;
     border-top: none;
     border-left: none;
     border-right: none;
     width: 100%;
-    
+
     box-shadow: 0px 2px rgb(237, 235, 235);
   }
- 
-  aside{
+
+  aside {
     margin-top: -15px;
   }
 }
-
