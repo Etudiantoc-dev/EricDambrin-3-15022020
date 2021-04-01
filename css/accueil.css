@@ -413,7 +413,7 @@ footer img{
   
   position: relative;
   right: 18px;
-  filter: invert();
+  filter: invert(1);
   
 }
 
