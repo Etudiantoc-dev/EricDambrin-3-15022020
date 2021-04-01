@@ -17,12 +17,14 @@
   font-weight: normal;
   font-style: normal;
 }
-/*animation 1*/
-.proposition {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-  white-space: nowrap;
+/*Animation Sélection d'un plat*/
+.proposition /*Textes des plats*/{
+  text-overflow: ellipsis;/*le texte qui ne peut pas être contenu dans sa boite
+   se transforme en ellipse("...")*/
+  overflow: hidden;/*gère le dépassement du texte en ne le rendant pas visible*/
+  flex: 1;/*taille d'occupation du contenant par rapport aux autres boites contenues (prix et check)*/
+  white-space: nowrap;/*gère les blancs au sein de l'élément en évitant un retour à la ligne du texte
+   quand celui-ci dépasse la taille de la boite, nécessaire pour valider l'effet voulu..*/
 }
 
 .prix {
@@ -31,13 +33,18 @@
   margin-top: -12px;
   padding-top: 29px;
   margin-right: -25px;
-  transition: flex 0.8s;
+  transition: flex 0.8s;/*permet un retour lineaire du prix à sa place d'origine*/
+}
+.plat:hover .prix {
+  flex: 0.5;
+  transition: flex 0.4s linear;
 }
 
-.check {
-  transform: scaleX(0);
-  transform-origin: 100% 0%;
-  transition: transform 0.5s linear;
+.check /*Symbole de validation*/{
+  transform: scaleX(0);/*son état"invisible"
+  quand celui-ci n'est pas survolé en desktop ou cliqué en mobile*/
+  transform-origin: 100% 0%;/*définit une position d'origine 100% de sa taille à sa droite*/
+  transition: transform 0.5s ease-in-out;/*transition entrée et sortie à la même vitesse*/
   flex: 0;
   text-align: center;
   margin-bottom: -12px;
@@ -46,18 +53,12 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-
-.check i {
-  margin-right: 14px;
-}
-
 .plat:hover .check {
   transform: scaleX(1);
 }
 
-.plat:hover .prix {
-  flex: 0.5;
-  transition: flex-grow 0.4s linear;
+.check i {
+  margin-right: 14px;
 }
 
 .plat:hover .check i {
@@ -81,7 +82,7 @@
     transform: scaleX(1) rotate(360deg);
   }
 }
-/*animation 2*/
+/*animation Apparition progressive */
 .entrée1 {
   animation: progress-menu 1.5s;
 }
@@ -124,7 +125,7 @@
 @keyframes progress-menu {
   0% {
     transform: translateY(10px);
-    opacity: 0;
+    opacity: 0;/*donne cette impression de sortie d'écran de fumée*/
   }
   100% {
     transform: translateY(0);
