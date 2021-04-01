@@ -130,7 +130,6 @@ h1 {
   font-size: 1em;
 }
 .logo_map {
-  /*compromis car écart différent entre firefox et chrome!?*/
   margin-left: 43px;
 }
 input {
@@ -150,13 +149,13 @@ input:focus {
   color: black;
   font-weight: normal;
 }
-.action h3 {
+.presentation h3 {
   padding-top: 13px;
   width: max-content;
   margin: auto;
   margin-bottom: -14px;
 }
-.suite_action_h3 {
+.suite_presentation_h3 {
   margin: auto;
   width: max-content;
   margin-bottom: 10px;
@@ -166,7 +165,7 @@ h3 {
   font-size: 1.4em;
 }
 
-.action p {
+.presentation p {
   width: max-content;
   margin: auto;
   padding-top: 15px;
@@ -203,7 +202,7 @@ p,
   color: #f8f7f7;
   font: menu;
 }
-.action {
+.presentation {
   background: rgb(248 247 247);
   padding-bottom: 58px;
   padding-top: 20px;
@@ -414,7 +413,8 @@ footer h3 {
 footer ul {
   line-height: 26px;
 }
-@media screen and (min-width: 600px) and (max-width: 1150px) {
+@media screen and (min-width: 600px)and (max-width: 1150px) {
+  /*choix visuel de commencer le point break à cette hauteur*/ 
   .texte,
   .texte1,
   .logo,
@@ -488,14 +488,22 @@ footer ul {
   #bloc_page {
     margin: 0 50px 0 50px;
   }
-  #point_break_1150 {
+  #point_break_1150 {/*Balise pour positionner présentation et fonctionnement l'un à côté de l'autre*/
     display: flex;
+  }
+  header {
+    border: 1px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    box-shadow: 0px 2px rgb(237, 235, 235);
   }
 
   section {
     width: 50%;
   }
-  .action {
+  .presentation{
     padding-bottom: 32px;
   }
   .un__un,
@@ -612,16 +620,6 @@ footer ul {
   .deux__deux,
   .trois__trois {
     margin-top: 16px;
-  }
-
-  header {
-    border: 1px solid grey;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-
-    box-shadow: 0px 2px rgb(237, 235, 235);
   }
 
   aside {
