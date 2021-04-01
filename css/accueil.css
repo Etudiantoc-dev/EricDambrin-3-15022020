@@ -39,29 +39,7 @@
   animation: progress-rotate-loader 2.5s;
   opacity: 0;
 }
-/*placement mot Chargement...*/
-.chargement {
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 715px;
-  margin: auto;
-  width: max-content;
-  animation: progress-opacity 2.5s;
-}
-/*Animation mot Chargement...*/
-@keyframes progress-opacity {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
+
 /*Animation rotate-spinner*/
 @keyframes progress-rotate-loader {
   0% {
