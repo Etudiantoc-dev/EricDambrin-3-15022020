@@ -188,6 +188,8 @@ img {
   top: 10px;
   opacity: 0;
   color: #9356dc;
+  transform: scale(0.5);
+  transition: transform 0.8s;
 }
 
 :hover.fa-heart {
@@ -195,6 +197,7 @@ img {
   cursor: pointer;
   font-size: 24px;
   color: #9356dc;
+  transform: scale(1);
 }
 
 section {
