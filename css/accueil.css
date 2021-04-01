@@ -39,13 +39,44 @@
   right: 0;left: 0;bottom: 0;top:0;
   animation: progress-loader 2.5s ;
   z-index: -1;
+  
 }
+body span{
+  z-index: -1;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  position: absolute;
+  right: 0;left: 0;bottom: 0;top:0;
+
+}
+
 @keyframes progress-loader{
-  from{
+  0%{
     transform: rotate(0)  ;
     z-index: 1;
+    
   }
-  to{
+  20%{
+    transform:rotate(50deg)
+  }
+  35%{
+    transform: rotate(110deg);
+  }
+  50%{
+    transform: rotate(140deg);
+  }
+  60%{
+    transform: rotate(230deg);
+  }
+  80%{
+    transform: rotate(300deg);
+  }
+  90%{
+    transform: rotate(340deg);
+  }
+  
+  100%{
     transform: rotate(360deg);
    
 
@@ -56,7 +87,7 @@
     transform: translateY(100%);
     opacity: 0;
   }
-  96%{
+  99%{
     transform: translateY(100%);
     opacity: 0;
   }
