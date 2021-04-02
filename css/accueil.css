@@ -296,7 +296,8 @@ p,
   margin: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 193.33px;
+  height: 350px;
+  object-fit: cover;
 }
 
 .textimg,
