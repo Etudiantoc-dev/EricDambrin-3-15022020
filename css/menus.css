@@ -17,7 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/*Animation Sélection d'un plat*/
+/* 1////Transition sélection d'un plat*/
 .proposition /*Textes des plats*/{
   text-overflow: ellipsis;/*le texte qui ne peut pas être contenu dans sa boite
    se transforme en ellipse("...")*/
@@ -44,7 +44,7 @@
   transform: scaleX(0);/*son état"invisible"
   quand celui-ci n'est pas survolé en desktop ou cliqué en mobile*/
   transform-origin: 100% 0%;/*définit une position d'origine 100% de sa taille à sa droite*/
-  transition: transform 0.5s ease-in-out;/*transition entrée et sortie à la même vitesse*/
+  transition: transform 0.5s ease-in-out;/*transition entrée et sortie subtile (impression "naturelle")*/
   flex: 0;
   text-align: center;
   margin-bottom: -12px;
@@ -53,12 +53,21 @@
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.plat:hover .check {
+.plat:hover .check /*pseudoclasse permet ici le déclenchement de l'effet au survol*/ {
   transform: scaleX(1);
 }
 
 .check i {
   margin-right: 14px;
+}
+/*Animation de l'icone*/
+.fa-check-circle {
+  margin-left: 15px;
+  margin-top: 18px;
+  font-size: 1.5em;
+  background: #99e2d0;
+  border-radius: 100%;
+  color: white;
 }
 
 .plat:hover .check i {
@@ -82,7 +91,7 @@
     transform: scaleX(1) rotate(360deg);
   }
 }
-/*animation Apparition progressive */
+/*2//// Animation apparition progressive */
 .entrée1 {
   animation: progress-menu 1.5s;
 }
@@ -130,14 +139,6 @@
   100% {
     transform: translateY(0);
   }
-}
-.fa-check-circle {
-  margin-left: 15px;
-  margin-top: 18px;
-  font-size: 1.5em;
-  background: #99e2d0;
-  border-radius: 100%;
-  color: white;
 }
 
 .plat {
