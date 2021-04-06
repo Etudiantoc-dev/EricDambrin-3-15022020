@@ -259,7 +259,7 @@ h4 {
   box-shadow: 0px 4px #edebeb;
   transition: background 500ms;
 }
-:hover.commander {/*opacity ne marche pas ici, on voit la transparence*/
+:hover.commander {
   background:linear-gradient(-6deg, #9759e9, #ff79e9);
   box-shadow: 0px 1px 1px #edebeb;
 }

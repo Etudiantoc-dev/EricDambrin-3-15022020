@@ -198,7 +198,7 @@ p,
   box-shadow: 0px 4px rgb(237, 235, 235);
 }
 :hover.lien_restaurants  {
-opacity: 0.97;
+  background:linear-gradient(-6deg, #9759e9, #ff79e9);
 box-shadow: 0px 3px rgb(213, 206, 206) ;
 }
 .lien_restaurants a {
