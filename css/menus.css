@@ -52,6 +52,7 @@
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  
 }
 .plat:hover .check /*pseudoclasse permet ici le déclenchement de l'effet au survol*/ {
   transform: scaleX(1);
@@ -59,6 +60,9 @@
 
 .check i {
   margin-right: 14px;
+  
+  
+  
 }
 /*Animation de l'icone*/
 .fa-check-circle {
@@ -68,27 +72,32 @@
   background: #99e2d0;
   border-radius: 100%;
   color: white;
+  
+  
+  
+  
 }
-
 .plat:hover .check i {
   animation: progress-i 0.5s;
+  
 }
 
 @keyframes progress-i {
   0% {
-    transform: scaleX(0) rotate(0deg);
+    transform: translateX(0%) rotate(0deg);
+    
   }
   17% {
-    transform: scaleX(0.18) rotate(20deg);
+    transform: translateX(82%) rotate(20deg);
   }
   24% {
-    transform: scaleX(0.2) rotate(30deg);
+    transform: translateX(60%) rotate(30deg);
   }
   46% {
-    transform: scaleX(0.4) rotate(40deg);
+    transform: translateX(35%) rotate(40deg);
   }
   100% {
-    transform: scaleX(1) rotate(360deg);
+    transform: translateX(0%) rotate(360deg);
   }
 }
 /*2//// Animation apparition progressive */
