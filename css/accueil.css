@@ -199,7 +199,7 @@ p,
 }
 :hover.lien_restaurants  {
 opacity: 0.97;
-box-shadow: 2px 2px rgb(213, 206, 206) ;
+box-shadow: 0px 3px rgb(213, 206, 206) ;
 }
 .lien_restaurants a {
   text-decoration: none;
