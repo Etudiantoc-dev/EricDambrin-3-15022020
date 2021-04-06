@@ -197,6 +197,10 @@ p,
   border-radius: 30px;
   box-shadow: 0px 4px rgb(237, 235, 235);
 }
+:hover.lien_restaurants  {
+opacity: 0.97;
+box-shadow: 2px 2px rgb(213, 206, 206) ;
+}
 .lien_restaurants a {
   text-decoration: none;
   color: #f8f7f7;
