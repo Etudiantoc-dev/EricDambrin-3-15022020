@@ -84,20 +84,20 @@
 
 @keyframes progress-i {
   0% {
-    transform: translateX(0%) rotate(0deg);
+    transform:  rotate(0deg);
     
   }
   17% {
-    transform: translateX(82%) rotate(20deg);
+    transform:  rotate(20deg);
   }
   24% {
-    transform: translateX(60%) rotate(30deg);
+    transform:  rotate(30deg);
   }
   46% {
-    transform: translateX(35%) rotate(40deg);
+    transform:  rotate(40deg);
   }
   100% {
-    transform: translateX(0%) rotate(360deg);
+    transform:  rotate(360deg);
   }
 }
 /*2//// Animation apparition progressive */
