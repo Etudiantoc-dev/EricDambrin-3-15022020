@@ -418,7 +418,7 @@ footer ul {
   line-height: 26px;
 }
 @media screen and (min-width: 768px)and (max-width: 1150px) {
-  /*choix visuel de commencer le point break à cette hauteur*/ 
+  /*Forme graphique change à partir du point-break des tablettes*/ 
   .texte,
   .texte1,
   .logo,
@@ -489,6 +489,7 @@ footer ul {
   }
 }
 @media (min-width: 1150px) {
+  /*point-break déterminé pour un rendu photos plus cohérent*/ 
   #bloc_page {
     margin: 0 50px 0 50px;
   }
