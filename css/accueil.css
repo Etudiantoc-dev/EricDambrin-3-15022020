@@ -117,7 +117,7 @@ h1 {
 #quartier {
   display: flex;
   align-content: space-between;
-  width: max-content;
+  width: 233px;
   margin: auto;
 }
 .texte0 {
@@ -417,7 +417,7 @@ footer h3 {
 footer ul {
   line-height: 26px;
 }
-@media screen and (min-width: 600px)and (max-width: 1150px) {
+@media screen and (min-width: 768px)and (max-width: 1150px) {
   /*choix visuel de commencer le point break à cette hauteur*/ 
   .texte,
   .texte1,
@@ -502,6 +502,9 @@ footer ul {
     border-right: none;
     width: 100%;
     box-shadow: 0px 2px rgb(237, 235, 235);
+  }
+  #quartier{
+    width: 270px;
   }
 
   section {
