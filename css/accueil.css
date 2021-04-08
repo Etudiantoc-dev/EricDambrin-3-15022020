@@ -198,7 +198,7 @@ p,
 }
 :hover.lien_restaurants  {
   background:linear-gradient(-6deg, #9759e9, #ff79e9);
-  box-shadow: 0px 3px rgb(213, 206, 206) ;
+  box-shadow: 0px 4px rgb(213, 206, 206) ;
 }
 .lien_restaurants a {
   text-decoration: none;
